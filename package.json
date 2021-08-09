@@ -1,0 +1,37 @@
+{
+  "name": "streak-in",
+  "version": "1.0.0",
+  "description": "booking website ",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development",
+    "start": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anonymous-alpha-linux/react-steakin_restaurant-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anonymous-alpha-linux/react-steakin_restaurant-web/issues"
+  },
+  "homepage": "https://github.com/Anonymous-alpha-linux/react-steakin_restaurant-web#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^6.0.1",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}

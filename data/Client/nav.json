@@ -1,0 +1,70 @@
+{
+ "links":[
+  {
+   "id": 1,
+   "url": "/",
+   "text": "Home"
+  },
+  {
+   "id": 2,
+   "url": "/",
+   "text": "About"
+  },
+  {
+   "id": 3,
+   "url": "/",
+   "text": "Menu"
+  },
+  {
+   "id": 4,
+   "url": "/",
+   "text": "Book a table"
+  },
+  {
+   "id": 5,
+   "url": "/",
+   "text": "Features"
+  },
+  {
+   "id": 6,
+   "url": "/",
+   "text": "Blog"
+  },
+  {
+   "id": 7,
+   "url": "/",
+   "text": "Shop"
+  },
+  {
+   "id": 8,
+   "url": "/",
+   "text": "Elements"
+  },
+  {
+   "id": 9,
+   "url": "/",
+   "text": "Book a table"
+  }
+ ],
+
+ "socials":[
+ {
+   "id": 1,
+   "url": "/",
+   "text": "Facebook",
+   "ico": ""
+  },
+  {
+   "id": 2,
+   "url": "/",
+   "text": "Instagram",
+   "ico": ""
+  },
+  {
+   "id": 3,
+   "url": "/",
+   "text": "Tweeter.",
+   "ico": ""
+  }
+ ]
+}

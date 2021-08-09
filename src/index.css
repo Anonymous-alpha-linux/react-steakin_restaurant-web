@@ -1,0 +1,11 @@
+:root {
+  -o-animation-delay: 20ms;
+  -o-animation-direction: reverse;
+}
+
+h1,
+h2,
+h3 {
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */
