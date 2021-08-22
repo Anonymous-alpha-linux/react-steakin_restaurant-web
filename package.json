@@ -2,11 +2,13 @@
   "name": "streak-in",
   "version": "1.0.0",
   "description": "booking website ",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development",
-    "start": "webpack --mode production"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack server --open",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,20 +20,28 @@
     "url": "https://github.com/Anonymous-alpha-linux/react-steakin_restaurant-web/issues"
   },
   "homepage": "https://github.com/Anonymous-alpha-linux/react-steakin_restaurant-web#readme",
-  "devDependencies": {
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
     "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.1.0",
     "css-loader": "^6.2.0",
+    "express": "^4.17.1",
+    "fibers": "^5.0.0",
+    "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.0",
     "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
     "postcss-loader": "^6.1.1",
     "sass": "^1.37.5",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
-    "webpack": "^5.49.0",
+    "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2",
+    "webpack-dev-middleware": "^3.7.3",
     "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.0"
   }
 }
