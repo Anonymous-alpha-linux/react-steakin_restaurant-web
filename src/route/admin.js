@@ -7,20 +7,40 @@ const express = require('express');
 ///Router Initialization
 const router = express.Router();
 
-
 ///Local module
 const rootDir = require('../util/path');
+const { url } = require('inspector');
 
-router.get('/', (req, res, next) => {
- res.sendFile(path.join(rootDir, 'src', 'View', 'admin.html'))
-})
+///Controller module
+const productController = require('../Controller/productCtrl')
+const adminController = require('../Controller/adminCtrl');
 
-router.get('/add-food', (req, res, next) => {
- res.sendFile(path.join(rootDir, "src", "View", "add-food.html"))
+router.use(express.static(path.join(rootDir, '/src/sass')))
+
+router.get('/', adminController.getDashboard);
+
+router.get('/AddFood', (req, res, next) => {
+ // res.sendFile(path.join(rootDir, "/src/View/add-food.html"));
+ res.render('add-food', {
+  docTitle: 'Steak-in Restaurant | The luxury restaurant in Danang',
+  pageName: 'Add Product'
+ })
 });
 
-router.post('/add-food', (req, res, next) => {
- res.redirect('/');
+router.post('/AddFood', (req, res, next) => {
+ const item = {
+  name: req.body.name,
+  type: req.body.type,
+  img_url: req.body.img_url,
+  desc: req.body.desc,
+  price: req.body.price,
+ }
+
+ products.push(item);
+
+ return res.redirect('/');
 })
 
-module.exports = router;
+router.get('/product', productController.getFood)
+
+module.exports = router

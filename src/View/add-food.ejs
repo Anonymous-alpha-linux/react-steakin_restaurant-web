@@ -1,0 +1,24 @@
+<%- include('./admin/head.ejs') %>
+ <%# This part for additional css %>
+
+  <%- include('./admin/body.ejs') %>
+   <section class="st-admin-body">
+    <form action="/admin/add-food" method="POST">
+     <div>
+      <label for="name">Food Name :</label>
+      <input type="text" name="name" id="name">
+     </div>
+     <div>
+      <label for="type">Food Type :</label>
+      <input type="text" name="type" id="type">
+     </div>
+     <div>
+      <label for="name">Food Image :</label>
+      <input type="url" name="img_url" id="img" src="" alt="">
+     </div>
+     <div>
+      <button type="submit">Add product</button>
+     </div>
+    </form>
+   </section>
+   <%- include('./admin/end.ejs') %>

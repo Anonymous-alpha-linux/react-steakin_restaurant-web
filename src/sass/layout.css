@@ -1,0 +1,245 @@
+html {
+  font-size: 12px;
+}
+
+nav {
+  font-size: 3rem;
+  color: #38928e;
+}
+
+footer {
+  font-size: 10rem;
+  color: #2beb17;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sticky {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.st-admin-sidebar {
+  position: relative;
+  z-index: 1000;
+}
+
+.st-admin-sidebar__wrapper {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: 1px 0px 12px black;
+          box-shadow: 1px 0px 12px black;
+}
+
+.st-admin-sidebar__wrapper .logo {
+  padding-left: 25px;
+  margin-bottom: 32px;
+}
+
+.st-admin-sidebar__wrapper .logo__wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  width: 100%;
+  height: 50px;
+}
+
+.st-admin-sidebar__wrapper .logo__wrapper img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 120px;
+  height: 30px;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu .menu__item {
+  padding-left: 20px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu .menu__item div {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 20px;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu .menu__item a {
+  color: #7802ff;
+  vertical-align: middle;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu .menu__item span {
+  font-size: 0.5em;
+  vertical-align: bottom;
+  padding-top: 6px;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu .menu__item.mm-active div, .st-admin-sidebar__wrapper .menu-list .menu .menu__item:hover div {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu .menu__item.mm-active a, .st-admin-sidebar__wrapper .menu-list .menu .menu__item:hover a {
+  color: #750062;
+}
+
+.st-admin-header {
+  position: relative;
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.st-admin-header__wrapper {
+  position: fixed;
+  padding: 0 20px;
+  left: 20%;
+  top: 0;
+  width: 77%;
+  height: 82px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: #fff;
+}
+
+.st-admin-header__wrapper .head {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.st-admin-header__wrapper .head .logo-sticky {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}
+
+.st-admin-header__wrapper .head .logo-sticky input {
+  margin-left: 20px;
+  font-size: 0.6em;
+  width: 220px;
+}
+
+.st-admin-header__wrapper .body {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.st-admin-header__wrapper .body .left .logo-sticky {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.st-admin-header__wrapper .body .left .logo-sticky .hamburger {
+  width: 40px;
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.st-admin-header__wrapper .body .left .logo-sticky .hamburger .line {
+  display: block;
+  background-color: #000;
+  width: 20px;
+  height: 3px;
+  margin: 4px 0;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.st-admin-header__wrapper .body .left .logo-sticky .hamburger .line:first-child {
+  width: 15px;
+}
+
+.st-admin-header__wrapper .body .right {
+  margin-right: 30px;
+}
+
+.st-admin-header__wrapper .body .right .breadcrumb {
+  margin: 0;
+}
+
+.st-admin-header__wrapper .body .right .breadcrumb-item {
+  font-weight: 400;
+}
+
+.st-admin-header__wrapper .body .right .breadcrumb-item.active {
+  font-weight: 600;
+}
+
+.st-admin-header .nav-sticky {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.st-admin-header .nav-sticky .nav div {
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+
+.st-admin-header .nav-sticky .user-profile {
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.st-admin-header .nav-sticky .user-profile .desc {
+  margin: 0 10px 0 20px;
+}
+
+.st-admin-header .nav-sticky .user-profile .desc .user__greeting {
+  margin: 0;
+  opacity: 0.4;
+  font-size: 1em;
+}
+
+.st-admin-header .nav-sticky .user-profile .present__img--wrapper {
+  background: url("https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png") no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: royalblue;
+}
+
+.st-admin-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.st-admin-body {
+  position: relative;
+  left: 20%;
+  padding: 20px;
+  z-index: -1;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=layout.css.map */

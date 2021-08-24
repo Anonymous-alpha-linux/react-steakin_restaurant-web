@@ -1,11 +1,212 @@
 $redHeading: rgb(56, 146, 142);
 $primaryFooter: rgb(43, 235, 23);
+$active-tab: rgba(0, 0, 0, 0.1);
+
+html {
+  font-size: 12px;
+}
 nav {
   font-size: 3rem;
   color: $redHeading;
 }
-
 footer {
   font-size: 10rem;
   color: $primaryFooter;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sticky {
+  background-color: #fff;
+  border-bottom: 1px solid $active-tab;
+}
+
+.st-admin-sidebar {
+  position: relative;
+  z-index: 1000;
+
+  &__wrapper {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 1px 0px 12px black;
+    .logo {
+      padding-left: 25px;
+      margin-bottom: 32px;
+      &__wrapper {
+        justify-content: center;
+        padding: 10px;
+        background-position: center;
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        width: 100%;
+        height: 50px;
+        img {
+          object-fit: fill;
+          width: 120px;
+          height: 30px;
+        }
+      }
+    }
+
+    .menu-list {
+      .menu {
+        .menu__item {
+          padding-left: 20px;
+          font-size: 1.1em;
+          font-weight: 400;
+          div {
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            padding: 20px;
+          }
+          a {
+            color: rgb(120, 2, 255);
+            vertical-align: middle;
+          }
+          span {
+            font-size: 0.5em;
+            vertical-align: bottom;
+            padding-top: 6px;
+          }
+          &.mm-active,
+          &:hover {
+            div {
+              background-color: $active-tab;
+            }
+            a {
+              color: rgb(117, 0, 98);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.st-admin-header {
+  position: relative;
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  &__wrapper {
+    position: fixed;
+    padding: 0 20px;
+    left: 20%;
+    top: 0;
+    width: 77%;
+    height: 82px;
+    box-sizing: content-box;
+    background-color: #fff;
+    .head {
+      justify-content: space-between;
+      align-items: center;
+      .logo-sticky {
+        position: relative;
+        align-items: center;
+        font-size: 1.5em;
+        input {
+          margin-left: 20px;
+          font-size: 0.6em;
+          width: 220px;
+        }
+      }
+    }
+    .body {
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        .logo-sticky {
+          position: relative;
+          align-items: center;
+          .hamburger {
+            width: 40px;
+            position: relative;
+            display: inline-block;
+            height: 40px;
+            padding-top: 5px;
+            .line {
+              display: block;
+              background-color: #000;
+              width: 20px;
+              height: 3px;
+              margin: 4px 0;
+              border-radius: 3px;
+              transition: all 0.3s ease-in-out;
+              &:first-child {
+                width: 15px;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        margin-right: 30px;
+        .breadcrumb {
+          margin: 0;
+          &-item {
+            font-weight: 400;
+            &.active {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav-sticky {
+    align-items: center;
+    .nav {
+      div {
+        padding: 0 20px;
+        font-size: 1.5rem;
+      }
+    }
+    .user-profile {
+      text-align: right;
+      align-items: center;
+      .desc {
+        margin: 0 10px 0 20px;
+        .user__greeting {
+          margin: 0;
+          opacity: 0.4;
+          font-size: 1em;
+        }
+        .user__name {
+        }
+      }
+      .present {
+        &__img--wrapper {
+          background: url("https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png")
+            no-repeat;
+          background-size: 100%;
+          width: 30px;
+          height: 30px;
+          border: none;
+          border-radius: 50%;
+          background-color: royalblue;
+        }
+      }
+    }
+  }
+}
+
+.st-admin-content {
+  flex-grow: 1;
+}
+
+.st-admin-body {
+  position: relative;
+  left: 20%;
+  padding: 20px;
+  z-index: -1;
+  width: 80%;
+  background-color: $active-tab;
 }

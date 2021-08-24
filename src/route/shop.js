@@ -10,9 +10,9 @@ const router = express.Router();
 ///Local Variable
 const rootDir = require('../util/path');
 
-router.get('/', (req, res, next) => {
- res.sendFile(path.join(rootDir, 'src', 'View', 'product.html'));
- // res.sendFile(path.join(rootDir, 'src', 'sass', 'product.css'))
-});
+///Controller module
+const productController = require('../Controller/productCtrl')
+
+router.get('/', productController.getFood);
 
 module.exports = router;

@@ -1,77 +1,65 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
- entry: './src/JS/index.js',
+ entry: './src/Controller/index.js',
  output: {
-  path: path.resolve(__dirname, './dist/JS'),
   filename: 'bundle.js',
-  publicPath: 'dist/'
+  path: path.join(__dirname, '/dist'),
  },
- mode: 'development',
- devtool: 'source-map',
+ devServer: {
+  static: '/src',
+  contentBase: './dist'
+ },
+ mode: 'production',
  module: {
   rules: [
-   // {
-   //  test: /\.s[ac]ss$/i,
-   //  use: [
-   //   "style-loader",
-   //   "css-loader",
-   //   "sass-loader"
-   //  ]
-   // },
    {
-    test: /\.(ttf)$/,
-    type: 'asset/resource',
-   },
-   {
-    test: /\.css$/,
-    use: [
-     'style-loader',
-     'css-loader'
-    ]
-   },
-   {
-    test: /\.scss$/,
-    use: [
-     'style-loader',
-     'css-loader',
-     'sass-loader'
-    ]
+    test: /\.m?js$/,
+    include: /(node_modules|bower_components)/,
+    use: {
+     loader: 'babel-loader',
+     options: {
+      presets: ['@babel/preset-env'],
+      plugins: ['@babel/plugin-proposal-object-rest-spread']
+     }
+    }
    },
    {
     test: /\.(png|jpg)$/,
-    type: 'asset/inline',
+    type: 'asset',
     parser: {
      dataUrlCondition: {
       maxSize: 3 * 1024
      }
     }
+   },
+   {
+    test: /\.txt/,
+    type: 'asset/source'
+   },
+   {
+    test: /\.css$/i,
+    use: [
+     MiniCssExtractPlugin.loader, 'css-loader'
+    ]
+   },
+   {
+    test: /\.s[ac]ss$/i,
+    use: [
+     process.env.NODE_ENV !== "production" ?
+      "style-loader" :
+      MiniCssExtractPlugin.loader,
+     "css-loader",
+     "sass-loader"
+    ],
    }
-  ],
- }
-
- // module: {
- //  rules: [
- //   {
- //    test: /.(scss|css)$/,
- //    exclude: /node_modules/,
- //    use: [
- //     {
- //      loader: MiniCssExtractPlugin.loader,
- //      options: {
- //       reloadAll: true
- //      }
- //     },
- //     'css-loader',
- //     'postcss-loader',
- //     'sass-loader',
- //    ]
- //   }
- //  ]
- // },
- // plugins: [
- //  new MiniCssExtractPlugin({
- //   filename: '[name].css'
- //  })
- // ]
-}
+  ] 
+ },
+ plugins: [
+  new MiniCssExtractPlugin({
+   filename: 'style.css',
+   chunkFilename: '1.css'
+  })
+ ]
+};
