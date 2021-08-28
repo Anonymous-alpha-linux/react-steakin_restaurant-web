@@ -13,6 +13,6 @@ const rootDir = require('../util/path');
 ///Controller module
 const productController = require('../Controller/productCtrl')
 
-router.get('/', productController.getFood);
+router.get('/product', productController.getFood);
 
 module.exports = router;

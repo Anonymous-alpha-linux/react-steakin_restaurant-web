@@ -1,0 +1,115 @@
+.review {
+  .review__restaurant--card {
+    .card {
+      &__title {
+        &--main {
+        }
+
+        &--nav {
+          padding: 10px;
+          button {
+            margin: 0 10px;
+            font-weight: 500;
+          }
+
+          input {
+            padding: 5px;
+            vertical-align: middle;
+            outline: none;
+            margin: 0 10px;
+            font-weight: 600;
+          }
+          input[type="number"] {
+            width: 50px;
+          }
+          .entries-bar {
+          }
+          .search-bar {
+            position: relative;
+            > span {
+              position: absolute;
+              right: 25px;
+              top: 50%;
+              transform: translateY(-50%);
+              cursor: pointer;
+            }
+          }
+
+          .select-bar {
+            position: relative;
+            select {
+              padding: 5px;
+              vertical-align: middle;
+              outline: none;
+              width: 100px;
+              font-weight: 600;
+              option {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      &__body {
+        .users {
+          .user {
+            align-items: center;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+            padding: 10px 0;
+            background: #fff;
+            .desc {
+              align-items: center;
+              .img {
+                &__wrapper {
+                  width: 80px;
+                  height: 80px;
+                  overflow: hidden;
+                  margin-right: 10px;
+                  img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                &__msg {
+                  .review-index {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+          .review-content {
+            p {
+              text-align: justify;
+            }
+          }
+          .review-rating {
+            h1 {
+              text-align: center;
+            }
+            .rating {
+              .star {
+                &-rating {
+                  justify-content: center;
+                }
+              }
+            }
+          }
+          .review-control {
+            button {
+              font-size: 2em;
+            }
+            .accept {
+              color: chartreuse;
+            }
+            .deny {
+              color: crimson;
+            }
+          }
+        }
+      }
+    }
+  }
+}

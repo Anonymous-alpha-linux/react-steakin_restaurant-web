@@ -1,0 +1,442 @@
+<%- include('./admin/head.ejs') %>
+  <%# This part for additional css %>
+    <link rel="stylesheet" href="/sass/analytic.css">
+    <link rel="stylesheet" href="/sass/star.css">
+    <%- include('./admin/body.ejs') %>
+      <section class="st-admin-body">
+        <%# This part for body html %>
+          <main class="analysis" id="analysis">
+
+            <section class="analysis__restaurant--card">
+              <div class="card__title d-flex justify-content-between">
+                <div class="card__title--main">
+                  <h2>Most Favorites Items</h2>
+                  <p>Let's get a see to your product statics</p>
+                </div>
+                <div class="card__title--nav">
+                  <ul class="nav nav-pills rounded-pill justify-content-center">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">All Categories</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Main Course</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Pizza</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Drink</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Dessert</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">More</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__body">
+                <div class="product">
+
+                  <div class="item row">
+                    <div class="desc d-flex col flex-grow-1">
+                      <div class="img__wrapper">
+                        <img src="/assets/imgMenu/35.jpg" alt="" srcset="">
+                      </div>
+                      <div class="img__msg">
+                        <h5 class="title">Watermelon Juice with Ice</h5>
+                        <span class="rating">
+                          <div class="star-rate">
+                            <div class="star-rating" title="70%">
+                              <div class="back-stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                                <div class="front-stars" style="width: 72%">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </span>
+                        <span class="record-amount">
+                          (454 reviews)
+                        </span>
+                        <div class="like">
+                          <span class="heart-ico">
+                            <i class="fas fa-heart"></i>
+                          </span>
+                          <span class="heart-static">256k</span>
+                          <span>Like it</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="static d-flex col-5 justify-content-between">
+                      <div class="static__interest">
+                        <span class="chart-img"></span>
+                        <span class="msg">
+                          <p>45%</p> Interest
+                        </span>
+                      </div>
+                      <div class="static__sale">
+                        <span class="chart-img"></span>
+                        <span class="msg">
+                          <p>
+                            <span><i class="far fa-chart-bar"></i></span>
+                            <span>6732</span>
+                          </p> TotalScales
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="percent-static col-2">
+                      87%
+                      </d>
+                    </div>
+                  </div>
+
+                  <div class="item row">
+                    <div class="desc d-flex col flex-grow-1">
+                      <div class="img__wrapper">
+                        <img src="/assets/imgMenu/10.jpg" alt="" srcset="">
+                      </div>
+                      <div class="img__msg">
+                        <h5 class="title">Watermelon Juice with Ice</h5>
+                        <span class="rating">
+                          <div class="star-rate">
+                            <div class="star-rating" title="70%">
+                              <div class="back-stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                                <div class="front-stars" style="width: 72%">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </span>
+                        <span class="record-amount">
+                          (454 reviews)
+                        </span>
+                        <div class="like">
+                          <span class="heart-ico">
+                            <i class="fas fa-heart"></i>
+                          </span>
+                          <span class="heart-static">256k</span>
+                          <span>Like it</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="static d-flex col-5 justify-content-between">
+                      <div class="static__interest">
+                        <span class="chart-img"></span>
+                        <span class="msg">
+                          <p>45%</p> Interest
+                        </span>
+                      </div>
+                      <div class="static__sale">
+                        <span class="chart-img"></span>
+                        <span class="msg">
+                          <p> <span>6732</span> </p> TotalScales
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="percent-static col-2">
+                      87%
+                      </d>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="d-flex gap-5">
+              <section class=" analysis__restaurant--card col-7">
+                <div class="card__title d-flex justify-content-between">
+                  <div class="card__title--main">
+                    <h2>Sales Summary</h2>
+                    <p>Let's get some reference chart</p>
+                  </div>
+                  <div class="card__title--nav">
+                    <select name="" id="">
+                      <option value="monthly">Monthly</option>
+                      <option value="daily">Daily</option>
+                      <option value="Session">Session</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__body">
+                  This is a chart
+                </div>
+              </section>
+              <section class="analysis__restaurant--card flex-grow-1">
+                <div class="card__title d-flex justify-content-between">
+                  <div class="card__title--main">
+                    <h2>Loyal Customer</h2>
+                    <p>How a good with this relationship</p>
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="product user">
+
+                    <div class="item row">
+                      <div class="desc d-flex col flex-grow-1">
+                        <div class="img__wrapper">
+                          <img src="/assets/user/user_1.png" alt="" srcset="">
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">William Amsterdam</h5>
+                          <div class="like">
+                            <span class="heart-static">651</span>
+                            <span>Times order</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="item row">
+                      <div class="desc d-flex col flex-grow-1">
+                        <div class="img__wrapper">
+                          <img src="/assets/user/user_2.png" alt="" srcset="">
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">The rock</h5>
+                          <div class="like">
+                            <span class="heart-static">651</span>
+                            <span>Times order</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="item row">
+                      <div class="desc d-flex col flex-grow-1">
+                        <div class="img__wrapper">
+                          <img src="/assets/user/user_3.png" alt="" srcset="">
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">Kahm <Samahka></Samahka>
+                          </h5>
+                          <div class="like">
+                            <span class="heart-static">651</span>
+                            <span>Times order</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="d-flex gap-5">
+              <section class=" analysis__restaurant--card col-5">
+                <div class="card__title d-flex justify-content-between">
+                  <div class="card__title--main">
+                    <h2>Customer Map</h2>
+                    <p>Let's get some reference chart</p>
+                  </div>
+                </div>
+                <div class="card__body">
+                  This is a chart
+                </div>
+              </section>
+              <section class="analysis__restaurant--card flex-grow-1">
+                <div class="card__title d-flex justify-content-between">
+                  <div class="card__title--main">
+                    <h2>Revenue</h2>
+                    <p>A great revenue</p>
+                  </div>
+                  <div class="card__title--nav">
+                    <select name="" id="">
+                      <option value="monthly">Monthly</option>
+                      <option value="daily">Daily</option>
+                      <option value="Session">Session</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card__body">
+                  This is revenue chart
+                </div>
+              </section>
+            </div>
+
+            <div class="d-flex gap-5">
+              <!-- Daily Trending Menus -->
+              <section class=" analysis__restaurant--card col-6">
+                <div class="card__title d-flex justify-content-between">
+                  <div class="card__title--main">
+                    <h2>Daily Trending Menus</h2>
+                    <p>Let's check your menu</p>
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="product">
+                    <div class="item row">
+                      <div class="desc d-flex col flex-grow-1">
+                        <div class="img__wrapper img-sm">
+                          <img src="/assets/imgMenu/8.jpg" alt="" srcset="">
+                          <span class="rounded-circle">#1</span>
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">Watermelon Juice with Ice</h5>
+                          <span class="record-amount">
+                            $<span class="price">5.6</span>
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="order-amount col-2">
+                        Order <span class="amount">89x</span>
+                      </div>
+                    </div>
+
+                    <div class="item row">
+                      <div class="desc d-flex col flex-grow-1">
+                        <div class="img__wrapper img-sm">
+                          <img src="/assets/imgMenu/7.jpg" alt="" srcset="">
+                          <span class="rounded-circle">#2</span>
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">Watermelon Juice with Ice</h5>
+                          <span class="record-amount">
+                            $<span class="price">5.6</span>
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="order-amount col-2">
+                        Order <span class="amount">89x</span>
+                      </div>
+                    </div>
+
+                    <div class="item row">
+                      <div class="desc d-flex col flex-grow-1">
+                        <div class="img__wrapper img-sm">
+                          <img src="/assets/imgMenu/42.jpg" alt="" srcset="">
+                          <span class="rounded-circle">#3</span>
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">Watermelon Juice with Ice</h5>
+                          <span class="record-amount">
+                            $<span class="price">5.6</span>
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="order-amount col-2">
+                        Order <span class="amount">89x</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Best Seller Menus -->
+              <section class="analysis__restaurant--card flex-grow-1">
+                <div class="card__title d-flex justify-content-between">
+                  <div class="card__title--main">
+                    <h2>Best Seller menus</h2>
+                    <p>A great menu</p>
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="product">
+                    <div class="item">
+                      <div class="desc">
+                        <div class="img__wrapper img-xl">
+                          <img src="/assets/imgMenu/41.jpg" alt="" srcset="">
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">Medium Spicy Pizza with Kemangi Leaf</h5>
+                          <div class="desc d-flex justify-content-between">
+                            <div class="price">
+                              $<span>6.53</span>
+                            </div>
+                            <div class="heart">
+                              <span class="heart-ico">
+                                <i class="fas fa-heart"></i>
+                              </span>
+                              <span class="heart-static">256k</span>
+                            </div>
+                            <div class="chart">
+                              <span class="chart-ico">
+                                <i class="far fa-chart-bar"></i>
+                              </span>
+                              <span class="chart-static">6,723</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="desc">
+                        <div class="img__wrapper img-xl">
+                          <img src="/assets/imgMenu/38.jpg" alt="" srcset="">
+                        </div>
+                        <div class="img__msg">
+                          <h5 class="title">Medium Spicy Pizza with Kemangi Leaf</h5>
+                          <div class="desc d-flex justify-content-between">
+                            <div class="price">
+                              $<span>6.53</span>
+                            </div>
+                            <div class="heart">
+                              <span class="heart-ico">
+                                <i class="fas fa-heart"></i>
+                              </span>
+                              <span class="heart-static">256k</span>
+                            </div>
+                            <div class="chart">
+                              <span class="chart-ico">
+                                <i class="far fa-chart-bar"></i>
+                              </span>
+                              <span class="chart-static">6,723</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </main>
+      </section>
+      <script src="/util/star.js"></script>
+      <%- include('./admin/end.ejs') %>

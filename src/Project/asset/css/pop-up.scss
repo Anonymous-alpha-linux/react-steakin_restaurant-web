@@ -1,0 +1,23 @@
+@media screen and (min-width:768px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+#modelConfirm {
+    >div {
+        @media screen and (min-width: 786px) {
+            max-width: 70%;
+            max-width: 1200px;
+        }
+    }
+}
+
+#booking {
+    >div {
+        @media screen and (min-width: 786px) {
+            max-width: 70%;
+            max-width: 1200px;
+        }
+    }
+}

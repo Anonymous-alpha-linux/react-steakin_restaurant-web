@@ -1,0 +1,94 @@
+.About {
+  background-image: url(../asset/img/bg-img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -4rem;
+  z-index: 1;
+  position: relative;
+}
+
+.About div .breadcrumb {
+  text-transform: capitalize;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.About div .breadcrumb .breadcrumb-item.active {
+  color: #bb9356;
+}
+
+.About div .breadcrumb a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.About div .breadcrumb .breadcrumb-item::before {
+  color: #fff;
+}
+
+.bg-overlay:before {
+  content: "";
+  background-color: rgba(27, 26, 26, 0.75);
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.review > div > div:nth-child(2) {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.review > div > div:nth-child(2) > div {
+  border: 4px solid lightgray;
+  color: black;
+}
+
+.review > div > div:nth-child(2) > div span i {
+  margin: 1.5rem 0;
+  color: #ebdd1e;
+}
+
+.review > div > div:nth-child(2) > div img {
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+.intro > div h3 {
+  color: #bb9356;
+  font-size: 3rem;
+  font-family: 'Ruthie', cursive;
+}
+
+.intro > div h2 {
+  font-size: 4rem;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.intro > div .shape {
+  background-image: url(../asset/img/shape-4.png);
+  width: 100%;
+  height: 2rem;
+  padding: 1.5rem 0;
+  background-image: url(../asset/img/shape-4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro > div p {
+  padding-top: 5px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+/*# sourceMappingURL=review.css.map */

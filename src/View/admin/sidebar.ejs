@@ -1,63 +1,165 @@
 <aside class="st-admin-sidebar">
   <div class="st-admin-sidebar__wrapper">
     <div class="logo" id="main-logo">
-      <div class="logo__wrapper row">
-        <img class="col-6" src="../assets/logo-dark.png" alt="The logo of steak-in restaurant" width="100px"
+      <div class="logo__wrapper d-flex">
+        <img class="col-6" src="/assets/logo-dark.png" alt="The logo of steak-in restaurant" width="100px"
           height="50px">
-        
       </div>
     </div>
 
+    <span class="close-ico">
+      <i class="fas fa-times"></i>
+    </span>
+
     <div class="menu-list">
       <div class="menu">
-        <div class=" menu__item mm-active">
-          <div>
-            <a href="/admin">Dashboard</a>
-            <span class="float-end">
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </div>
+        <div class=" menu__item" id="menu__item-1">
+          <h5 class="title">
+            <i class="fas fa-project-diagram"></i>
+            <span>DASHBOARD</span>
+          </h5>
+          <dl class="dropdown">
+            <dt>
+              <p>Dashboard
+                <span class="float-end">
+                  <span class="arrow-expand disappear">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  <span class="arrow-collapse">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </span>
+              </p>
+            </dt>
+            <dd>
+              <a href="/admin/">Restaurant</a>
+            </dd>
+            <dd>
+              <a href="/admin/analytics">Analytic</a>
+            </dd>
+            <dd>
+              <a href="/admin/review">Review</a>
+            </dd>
+            <dd>
+              <a href="/admin/booking-list">Booking List</a>
+            </dd>
+            <dd>
+              <a href="/admin/customer-list">Customer List</a>
+            </dd>
+            <dd>
+              <a href="/admin/management">Manage Food</a>
+            </dd>
+            <dd>
+              <a href="/admin/management">Manage Table</a>
+            </dd>
+          </dl>
         </div>
-        <div class="menu__item">
-          <div>
-            <a href="/admin/AddFood">App</a>
-            <span class="float-end">
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </div>
+        <div class="menu__item" id="menu__item-2">
+          <h5 class="title">
+            <i class="fas fa-project-diagram"></i>
+            <span>CONTACT</span>
+          </h5>
+          <dl>
+            <dt>
+              <p href="/admin/AddFood">Chat
+                <span class="float-end">
+                  <span class="arrow-expand disappear">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  <span class="arrow-collapse">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </span>
+              </p>
+            </dt>
+            <dd>
+              <a href="#">Chat</a>
+            </dd>
+          </dl>
         </div>
-        <div class="menu__item">
-          <div>
-            <a href="/admin/product">Review</a>
-            <span class="float-end">
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </div>
+        <div class="menu__item" id="menu__item-3">
+          <h5 class="title"><i class="fas fa-project-diagram"></i>
+            <span>CUSTOMER</span>
+          </h5>
+          <dl>
+            <dt>
+              <p href="/admin/AddFood">Order
+                <span class="float-end">
+                  <span class="arrow-expand disappear">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  <span class="arrow-collapse">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </span>
+              </p>
+            </dt>
+            <dd>
+              <a href="#">Order</a>
+            </dd>
+            <dt>
+              <p href="/admin/AddFood">Booking List
+                <span class="float-end">
+                  <span class="arrow-expand disappear">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  <span class="arrow-collapse">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </span>
+              </p>
+            </dt>
+            <dd>
+              <a href="">Booking</a>
+            </dd>
+          </dl>
+
         </div>
-        <div class="menu__item">
-          <div>
-            <a href="">Order</a>
-            <span class="float-end">
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </div>
+        <div class="menu__item" id="menu__item-4">
+          <h5 class="title">
+            <i class="fas fa-project-diagram"></i>
+            <span>FOOD</span>
+          </h5>
+          <dl>
+            <dt>
+              <p href="/admin/AddFood">Food
+                <span class="float-end">
+                  <span class="arrow-expand disappear">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  <span class="arrow-collapse">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </span>
+              </p>
+            </dt>
+            <dd>
+              <a href="#">Food</a>
+            </dd>
+          </dl>
         </div>
-        <div class="menu__item">
-          <div>
-            <a href="">Customer</a>
-            <span class="float-end"><i class="fas fa-chevron-right"></i></span>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div><a href="">Table</a>
-            <span class="float-end"><i class="fas fa-chevron-right"></i></span>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div><a href="">Analysis</a>
-            <span class="float-end"><i class="fas fa-chevron-right"></i></span>
-            </d>
-          </div>
+        <div class="menu__item" id="menu__item-5">
+          <h5 class="title">
+            <i class="fas fa-project-diagram"></i>
+            <span>TABLE</span>
+          </h5>
+          <dl>
+            <dt>
+              <p href="/admin/AddFood">Table
+                <span class="float-end">
+                  <span class="arrow-expand disappear">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
+                  <span class="arrow-collapse">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </span>
+              </p>
+            </dt>
+            <dd>
+              <a href="#">Table</a>
+            </dd>
+          </dl>
         </div>
       </div>
     </div>

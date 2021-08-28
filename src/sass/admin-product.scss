@@ -1,0 +1,131 @@
+img {
+  object-fit: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.main__content--left {
+  padding: 0 20px 50px;
+
+  .toolbar {
+    margin-bottom: 20px;
+    &__form {
+      margin: 0;
+      padding: 15px 10px;
+      user-select: none;
+      align-items: center;
+      &--card {
+        justify-content: space-between;
+        .col__input {
+          margin: 0;
+          &--selector {
+            padding: 3px 10px 3px 0;
+            font-size: 0.8em;
+            outline: none;
+            width: 100%;
+          }
+        }
+      }
+      label.col-label {
+        font-size: 0.9em;
+        font-weight: 900;
+        vertical-align: middle;
+        align-self: center;
+      }
+      #category-view {
+        justify-self: end;
+        align-self: flex-start;
+        .view-as {
+          border: 1px solid black;
+          padding: 2px 5px;
+          margin-left: 5px;
+          aspect-ratio: 1/1;
+          color: rgba(0, 0, 0, 0.5);
+          user-select: none;
+          &:hover {
+            color: #bb9356;
+          }
+        }
+        .active {
+          color: #bb9356;
+        }
+      }
+    }
+  }
+  .product__items {
+    .img-wrapper {
+      width: 100%;
+      height: 300px;
+      min-width: 150px;
+      position: relative;
+      .btn-cart {
+        background-color: #bb9356;
+        border-radius: 0;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        transition: all 0.35s 0.2 ease-in;
+      }
+      &__gray {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        height: 0;
+        width: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: all 0.1s ease-in-out;
+      }
+      &:hover {
+        .gray {
+          bottom: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+        }
+        .btn-cart {
+          visibility: visible;
+          width: 70%;
+          padding: 15px 20px;
+          z-index: 1;
+        }
+      }
+    }
+    .item {
+      &__content {
+        padding: 10px 0;
+        &--title {
+          font-size: 1.2rem;
+          font-weight: 800;
+        }
+        &--msg {
+          font-size: 0.9em;
+        }
+        &--footer {
+          font-size: 0.9em;
+          color: #bb9356;
+          font-weight: 800;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  .page-item {
+    margin-right: 10px;
+    .btn-primary {
+      background-color: black;
+      color: #fff;
+    }
+    &:hover {
+      background-color: blue;
+    }
+  }
+  .page-arrow-point {
+    margin: 0 15px;
+  }
+}

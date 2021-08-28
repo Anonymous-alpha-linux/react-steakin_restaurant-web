@@ -1,10 +1,2868 @@
-<%- include('./layout/head.ejs') %>
- <title>
-  <%= docTitle %>
- </title>
- <%# Css Import %>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://kit.fontawesome.com/b738c8e2a1.js" crossorigin="anonymous"></script>
-  </head>
+<%- include('./client/head.ejs') %>
+  <%# This part is included in css %>
+    <link rel="stylesheet" href="sass/styleHomepage.css">
+    <%- include('./client/body.ejs') %>
+      <section class="st-client-content">
+        <div>
+          <div class="p-5 bg-dark About bg-overlay vh-100 d-flex align-items-center">
+            <div class="container text-center text-light">
+              <h3 class="title">Steak In!</h3>
+              <h2 class="title text-light">Welcome to Steak In</h2>
+              <ol class="breadcrumb m-auto mt-5" arial-label="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home Page</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- end header -->
+        <!-- Document Wrapper
+============================================= -->
+        <div id="wrapper" class="wrapper clearfix">
+          <section id="banner4" class="banner banner-2 text-center">
+            <div class="container m-auto">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 m-auto">
+                  <div class="heading heading-1 text--center">
+                    <h3 class="heading--subtitle">Hello dear</h3>
+                    <h2 class="heading--title">Welcome To Steak In</h2>
+                    <div class="divider--shape-4"></div>
+                    <p class="heading--desc">Steak In was the first retaurant to open in Egypt, the resturant
+                      was designed with the history in mind we have created a soft industrial dining room,
+                      combined with an open kitchen, coffee take out bar and on site coffee roastery.
+                    </p>
+                  </div>
+                  <!-- .heading end -->
+                  <a class="btn btn--secondary btn--bordered rounded-pill mt-30" href="/">Book A Table</a>
+                </div>
+                <!-- .col-md-6 end -->
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="banner-img mt-3">
+                    <img src="/assets/banner.jpg" alt="image">
+                  </div>
+                </div>
+                <!-- .col-md-3 end -->
+                <div class="col-xs-12 col-sm-6 col-md-3 d-none d-md-block">
+                  <div class="banner-img">
+                    <img src="/assets/banner1.jpg" alt="image">
+                  </div>
+                  <!-- .col-md-3 end -->
+                </div>
+                <!-- .col-md-3 end -->
+              </div>
+              <!-- .row end -->
+            </div>
+            <!-- .container end -->
+          </section>
+          <!-- #banner4 end -->
+          <!-- specials #1
+     ============================================= -->
+          <section id="specials1"
+            class="mt-4 specials pt-5 pb-5 specials-1 menu-simple bg-overlay bg-parallax bg-overlay-dark">
+            <div class="container m-auto mt-5 mb-5">
+              <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                  <div class="dishes-wrapper">
+                    <div class="dishes-bordered">
+                      <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                          <div class="heading heading-1 mb-50 text--center">
+                            <h3 class="heading--subtitle">Delicious Recipes</h3>
+                            <h2 class="heading--title">Our Special Dishes</h2>
+                            <div class="divider--shape-4"></div>
+                          </div>
+                        </div>
+                        <!-- .col-md-8 end -->
+                      </div>
+                      <!-- .row end -->
+                      <div class="row w-100">
+                        <!-- Dish #1 -->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="dish-panel">
+                            <div class="dish--img">
+                              <img src="/assets/slider-bav.jpg" alt="dish">
+                            </div>
+                            <div class="dish--content">
+                              <div class="dish--content-bio row">
+                                <h3 class="dish--title col-9">Grilled Fillet</h3>
+                                <div class="dish--price col-3">$26.95</div>
+                              </div>
+                              <p class="dish--desc">Pork fillet, ginger, garlic, honey, pepper &
+                                canola oil, Pork fillet, ginger.</p>
+                            </div>
+                          </div>
+                          <!-- .dish end -->
+                        </div>
+                        <!-- .dish-panel end -->
+
+                        <!-- Dish #2 -->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="dish-panel">
+                            <div class="dish--img">
+                              <img src="/assets/slider-bav 2.jpg" alt="dish">
+                            </div>
+                            <div class="dish--content">
+                              <div class="dish--content-bio row">
+                                <h3 class="dish--title col-9">Alder Grilled Seafood</h3>
+                                <div class="dish--price col-3">$44.95</div>
+                              </div>
+                              <p class="dish--desc">Monkfish, onion, paella rice,smoked paprika,
+                                Monkfish, onion, paella.</p>
+                            </div>
+                          </div>
+                          <!-- .dish end -->
+                        </div>
+                        <!-- .dish-panel end -->
+                        <!-- Dish #3 -->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="dish-panel">
+                            <div class="dish--img">
+                              <img src="/assets/slider-bav 3.jpg" alt="dish">
+                            </div>
+                            <div class="dish--content">
+                              <div class="dish--content-bio row">
+                                <h3 class="dish--title col-9 p-0">Chicken Breast</h3>
+                                <div class="dish--price col-3">$28.95</div>
+                              </div>
+                              <p class="dish--desc">Paupiette of chicken & beans, blue cheese,
+                                rosemary & beans.</p>
+                            </div>
+                          </div>
+                          <!-- .dish end -->
+                        </div>
+                        <!-- .dish-panel end -->
+
+                        <!-- Dish #4 -->
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                          <div class="dish-panel">
+                            <div class="dish--img">
+                              <img src="/assets/slider-bav 4.jpg" alt="dish">
+                            </div>
+                            <div class="dish--content">
+                              <div class="dish--content-bio row">
+                                <h3 class="dish--title col-9 p-0">Sea Trout</h3>
+                                <div class="dish--price col-3">$40.95</div>
+                              </div>
+                              <p class="dish--desc">Roast trout, English asparagus, watercress ,
+                                delicious.</p>
+                            </div>
+                          </div>
+                          <!-- .dish end -->
+                        </div>
+                        <!-- .dish-panel end -->
+                      </div>
+                      <!-- .row end -->
+                    </div>
+                    <!-- .dishes-bordered end -->
+                  </div>
+                  <!-- .dishes-wrapper end -->
+                </div>
+                <!-- .col-md-10 end -->
+              </div>
+              <!-- .row end -->
+              <div class="divider--shape-1down"></div>
+            </div>
+            <!-- .container end -->
+          </section>
+          <!-- #specials1 end -->
+          <!--menu start-->
+          <section>
+            <div class="p-5 bg-light">
+              <div class="container">
+                <div class="row text-center Intro mt-3">
+                  <div class="col-8 ms-auto me-auto">
+                    <h3 class="title">Start Eating Better</h3>
+                    <h2 class="title text-dark">Daily New Fresh Meals</h2>
+                    <div class="shape"></div>
+                    <p class="description">Steak In has the perfect place to enjoy fine food and great cocktails
+                      with excellent service, in comfortable atmospheric surroundings. We have a soft dining
+                      room, combined with an open kitchen, coffee take out bar and alovely
+                      awesome on site coffee roastery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Breakfast</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Lunch</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Dinner</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-desert-tab" data-bs-toggle="pill" data-bs-target="#pills-desert"
+                  type="button" role="tab" aria-controls="pills-desert" aria-selected="false">Dessert</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-drink-tab" data-bs-toggle="pill" data-bs-target="#pills-drink"
+                  type="button" role="tab" aria-controls="pills-drink" aria-selected="false">Drink</button>
+              </li>
+            </ul>
+            <div class="tab-content container m-auto" id="pills-tabContent">
+              <!-- Page Breakfast -->
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="classifieds-container section-odd">
+                  <div class="classifieds-list-container row">
+                    <div class="classifieds-preview col-lg-4 col-sm-12">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/13.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/">Grilled Fillet</a>
+                        <span class="classifieds-preview-price float-end float-end">$ 12.95</span>
+                        <span class="classifieds-preview-subtitle">eggs, bacon and cherry-tomatoes with
+                          bread. </span>
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/14.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId2">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Alder Grilled Seafood Paella</a>
+                        <span class="classifieds-preview-price float-end">$ 19.95</span>
+                        <span class="classifieds-preview-subtitle">Oat granola with fresh blueberries,
+                          almond, yogurt.</span>
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/15.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId3">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Chicken Breast</a>
+                        <span class="classifieds-preview-price float-end">$ 14.95</span>
+                        <span class="classifieds-preview-subtitle">Applewood smoked bacon, tomatoes & green.
+                        </span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/16.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId4">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Sea Trout</a>
+                        <span class="classifieds-preview-price float-end">$ 15.95</span>
+                        <span class="classifieds-preview-subtitle">Salmon, butter, lemon juice, onion,
+                          garlic & salad.</span>
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/17.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId5">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Smoked Paprika Hummus</a>
+                        <span class="classifieds-preview-price float-end">$ 12.95</span>
+                        <span class="classifieds-preview-subtitle">Baguette, basil, arugula, olives,
+                          cherry-tomatoes.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/18.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId6">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Roasted Steak Roulade</a>
+                        <span class="classifieds-preview-price float-end">$ 20.95</span>
+                        <span class="classifieds-preview-subtitle">Croissants with strawberries, mascarpone,
+                          honey.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Page Lucnch -->
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="classifieds-container section-odd">
+                  <div class="classifieds-list-container">
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/31.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId7">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/">Meat Ball Soup</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/32.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId8">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Grilled American Fillet</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/33.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId2">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Grilled Seafood Paella</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/34.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId4">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Roast Sea Trout</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/35.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId5">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Smoked Paprika Hum</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/36.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        </span> <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="assets/imgMenu/37.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/38.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/39.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/40.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/41.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/42.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Page Dinner -->
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="classifieds-container section-odd">
+                  <div class="classifieds-list-container">
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/7.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/">Grilled Fillet</a>
+                        <span class="classifieds-preview-price float-end">$ 12.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/8.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId8">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Grilled American Fillet</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/9.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId3">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Grilled Seafood Paella</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/10.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId4">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Roast Sea Trout</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/11.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId5">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Smoked Paprika Hum</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/12.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId6">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Oyster With Hot Sauce</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Page Dessert -->
+              <div class="tab-pane fade" id="pills-desert" role="tabpanel" aria-labelledby="pills-desert-tab">
+                <div class="classifieds-container section-odd">
+                  <div class="classifieds-list-container">
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/19.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId10">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/">Beautiful homemade croissants</a>
+                        <span class="classifieds-preview-price float-end">$ 12.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/20.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId11">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Blueberry Sweet Rolls </a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/21.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId12">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Traditional pancakes </a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/22.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId13">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Chocolate Cherry Cake</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/23.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId14">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Pain au chocolat</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/24.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId15">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Cannoli with cream cheese</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Page Drink -->
+              <div class="tab-pane fade" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab">
+                <div class="classifieds-container section-odd">
+                  <div class="classifieds-list-container">
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/25.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId16">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/">Cappuccino Coffee</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/26.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId16">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Caffè Macchiato</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/27.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId16">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Dark Coffee</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans. </span>
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/28.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId16">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Espresso Coffee</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/29.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId16">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Coffee Latte</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+
+                      </div>
+                    </div>
+                    <div class="classifieds-preview col-lg-4 col-sm-6">
+                      <div class="classifieds-preview-information">
+                        <div class="classifieds-preview-image">
+                          <img src="/assets/imgMenu/30.jpg" class="w-100 h-100 mb-3">
+                          <div class="dish-overlay text-center " data-bs-toggle="modal" data-bs-target="#modelId16">
+                            <a class="dish-popup m-auto"><i class="fa fa-search-plus text-light"></i></a>
+                          </div>
+                        </div>
+                        <a href="/" title="">Coffee & Strawberry Jam</a>
+                        <span class="classifieds-preview-price float-end">$ 25.95</span>
+                        <span class="classifieds-preview-subtitle">Paupiette of chicken, blue cheese,
+                          rosemary & beans.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .container end -->
+            <div class="container bg-light bg-gradient">
+              <div class="row clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2  m-auto text--center">
+                  <a class="btn btn--primary btn--bordered btn--rounded btn--lg m-3 rounded-pill" href="/">Discover
+                    Full Menu</a>
+                </div>
+                <!-- .col-md-8 end -->
+              </div>
+              <!-- .row end -->
+            </div>
+            <!-- .container end -->
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Grilled Fillet</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/EI-Lhj7jCWg" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Grilled Fillet</h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 2-->
+            <div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Alder Grilled Seafood Paella</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/oZKuVXAptpY" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Alder Grilled Seafood
+                          Paella</h3>
+                        <p class="bg-light p-4">Rice, redefined. Paella, the comforting Valencian rice dish
+                          of humble origins, is both the name of the recipe and the pan in which it’s
+                          prepared: a round, flat-bottomed pan to give the rice maximum surface contact.
+                          Traditionally, paella is cooked over an open fire, and there are still many
+                          shops in Spain that cook over wood. We like the smoky flavor it imparts to the
+                          seafood in our version as well. And we love any excuse to
+                          light a fire. </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 3-->
+            <div class="modal fade" id="modelId3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Chicken Breast</h3>
+                    <h5 class="text-center">Price: $ 14.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/2K_GE4dMRrM" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Chicken Breast</h3>
+                        <p class="bg-light p-4">Rice, redefined. Paella, the comforting Valencian rice dish
+                          of humble origins, is both the name of the recipe and the pan in which it’s
+                          prepared: a round, flat-bottomed pan to give the rice maximum surface contact.
+                          Traditionally, paella is cooked over an open fire, and there are still many
+                          shops in Spain that cook over wood. We like the smoky flavor it imparts to the
+                          seafood in our version as well. And we love any excuse to
+                          light a fire. </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 4-->
+            <div class="modal fade" id="modelId4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Sea Trout</h3>
+                    <h5 class="text-center">Price: $ 15.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/GpUVubOKV5o" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Sea Trout</h3>
+                        <p class="bg-light p-4">Rice, redefined. Paella, the comforting Valencian rice dish
+                          of humble origins, is both the name of the recipe and the pan in which it’s
+                          prepared: a round, flat-bottomed pan to give the rice maximum surface contact.
+                          Traditionally, paella is cooked over an open fire, and there are still many
+                          shops in Spain that cook over wood. We like the smoky flavor it imparts to the
+                          seafood in our version as well. And we love any excuse to
+                          light a fire. </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 5-->
+            <div class="modal fade" id="modelId5" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Smoked Paprika Hummus</h3>
+                    <h5 class="text-center">Price: $ 15.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/tJWgG43m0ak" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Smoked Paprika Hummus
+                        </h3>
+                        <p class="bg-light p-4">Rice, redefined. Paella, the comforting Valencian rice dish
+                          of humble origins, is both the name of the recipe and the pan in which it’s
+                          prepared: a round, flat-bottomed pan to give the rice maximum surface contact.
+                          Traditionally, paella is cooked over an open fire, and there are still many
+                          shops in Spain that cook over wood. We like the smoky flavor it imparts to the
+                          seafood in our version as well. And we love any excuse to
+                          light a fire. </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 6-->
+            <div class="modal fade" id="modelId6" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Roasted Steak Roulade</h3>
+                    <h5 class="text-center">Price: $ 20.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/pn6wOvzgQoc" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Roasted Steak Roulade
+                        </h3>
+                        <p class="bg-light p-4">Rice, redefined. Paella, the comforting Valencian rice dish
+                          of humble origins, is both the name of the recipe and the pan in which it’s
+                          prepared: a round, flat-bottomed pan to give the rice maximum surface contact.
+                          Traditionally, paella is cooked over an open fire, and there are still many
+                          shops in Spain that cook over wood. We like the smoky flavor it imparts to the
+                          seafood in our version as well. And we love any excuse to
+                          light a fire. </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 7-->
+            <div class="modal fade" id="modelId7" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Meat Ball Soup</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/ghJgoQoHdDU" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Meat Ball Soup</h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 8-->
+            <div class="modal fade" id="modelId8" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Grilled American Fillet</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/EI-Lhj7jCWg" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Grilled American Fillet
+                        </h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 9 -->
+            <div class="modal fade" id="modelId9" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Grilled American Fillet</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/EI-Lhj7jCWg" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Grilled American Fillet
+                        </h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Desert Food -->
+            <!-- Modal 10 -->
+            <div class="modal fade" id="modelId10" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Beautiful homemade croissants</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/Ldgm3YD-tMQ?start=6" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Beautiful homemade
+                          croissants</h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 11-->
+            <div class="modal fade" id="modelId11" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Blueberry Sweet Rolls</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/ZsOpRTeHGws?start=6" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Blueberry Sweet Rolls
+                        </h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 12-->
+            <div class="modal fade" id="modelId12" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Traditional pancakes
+                    </h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/RTExkuPgxlI?start=6" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Traditional pancakes
+                        </h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 13-->
+            <div class="modal fade" id="modelId13" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Chocolate Cherry Cake</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/NHrzDUa9wNM?start=6" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Chocolate Cherry Cake
+                        </h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 14-->
+            <div class="modal fade" id="modelId14" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Pain au chocolat</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/XJ4DXWmig-Q?start=386" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Pain au chocolat </h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 15-->
+            <div class="modal fade" id="modelId15" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Pain au chocolat</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/Q5eZsxgrLOM?start=386" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Pain au chocolat </h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Drink Food -->
+            <!-- Modal 16 -->
+            <div class="modal fade" id="modelId16" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header row">
+                    <button type="button" class="btn-close col-12 float-end me-1" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <h3 class="product-title col-12 text-center">Cappuccino Coffee</h3>
+                    <h5 class="text-center">Price: $ 25.95</h5>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="show-popup row">
+
+                      <div class="tab-pane col-lg-6 col-sm-12 float-start m-auto">
+                        <div class="ratio ratio-16x9 ">
+                          <iframe src="https://www.youtube.com/embed/mTBNXXBrFDg" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane col-lg-6 col-sm-12 float-end row">
+                        <h5 class="text-uppercase fw-bold">Description</h5>
+                        <p>Beefsteak is one of the main dishes of our restaurant. This is a dish that is
+                          enjoyed by many customers and has good reviews.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="col-4">Nutrient</th>
+                              <th class="col-2">DV</th>
+                              <th class="col-6">%DV</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Protein</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Fat</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cacbonhydrates</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Calories</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Cholesterol</td>
+                              <td>54 gr</td>
+                              <td>
+                                <span class="float-start me-1">5% </span>
+                                <span class="progress mt-1">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                  </div>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="product-description mt-5 bg-dark">
+                        <h3 class="product-title col-12 text-center  text-light p-3">Cappuccino Coffee</h3>
+                        <p class="bg-light p-4">A beefsteak, often called just steak, is a flat cut of beef
+                          with parallel faces, usually cut perpendicular to the muscle fibers. In common
+                          restaurant service a single serving has a raw mass ranging from 120 to 600 grams
+                          (4 to 21 oz). Beef steaks are usually grilled, pan-fried, or broiled. The more
+                          tender cuts from the loin and rib are cooked quickly, using dry heat, and served
+                          whole. Less tender cuts from the chuck or round are
+                          cooked with moist heat or are mechanically tenderized (cf. cube steak). </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about us-->
+          <div class="p-5 bg-dark review text-center">
+            <div class="container">
+              <div class="row text-white">
+                <h3>Review</h3>
+                <h2>Happy Customer</h2>
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators top-100">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-evenly">
+                      <div class="col-lg-3 col-sm-12 active bg-white">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/1.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                      <div class="col-3  bg-white clone">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/2.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                      <div class="col-3  bg-white clone">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/3.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-evenly">
+                      <div class="col-3 bg-white clone">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/1.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                      <div class="col-lg-3 col-sm-12 bg-white">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/2.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                      <div class="col-3 bg-white clone">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/3.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-evenly">
+                      <div class="col-3 bg-white clone">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/1.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                      <div class="col-3 bg-white clone">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/2.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                      <div class="col-lg-3 col-sm-12 bg-white">
+                        <span>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <p>
+                          What I've enjoyed most, though, is meeting people who have a real interest in
+                          food and sharing ideas with them. Good food is a global and amazing thing.
+                        </p>
+                        <img src="/assets/3.png" class="img-thumbnail" alt="">
+                        <p>Almed Ibramovic</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="p-5 bg-light event">
+            <div class="container">
+              <div class="row text-center">
+                <h3>Don’t Miss</h3>
+                <h2>Our News & Events</h2>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                  <span>
+                    Mar 15,2017
+                    <a href="/">Monday, Tomato</a>
+                  </span>
+                  <h4>The Best Side Dishes</h4>
+                  <img src="/assets/3.jpg" class="img-thumbnail" alt="">
+                  <p>
+                    We actually share a lot of meals with them outside in the garden under the big walnut tree,
+                    during winter around the campfire or inside in their or our flat - it's so special to have
+                    such close friends...
+                  </p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <span>
+                    Mar 15,2017
+                    <a href="/">Monday, Tomato</a>
+                  </span>
+                  <h4>Dinner Party for a Chef!</h4>
+                  <img src="/assets/5.jpg" class="img-thumbnail" alt="">
+                  <p>
+                    We actually share a lot of meals with them outside in the garden under the big walnut tree,
+                    during winter around the campfire or inside in their or our flat - it's so special to have
+                    such close friends...
+                  </p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                  <span>
+                    Mar 15,2017
+                    <a href="/">Monday, Tomato</a>
+                  </span>
+                  <h4>Cake with Cream Cheese</h4>
+                  <img src="/assets/4.jpg" class="img-thumbnail" alt="">
+                  <p>
+                    We actually share a lot of meals with them outside in the garden under the big walnut tree,
+                    during winter around the campfire or inside in their or our flat - it's so special to have
+                    such close friends...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer#1-->
+        </div>
+        ============================================= -->
+      </section>
+      <%- include('./client/end.ejs') %>

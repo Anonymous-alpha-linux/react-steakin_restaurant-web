@@ -1,0 +1,11 @@
+.navigation {
+  top: 0;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.navigation a {
+  color: white !important;
+}
+/*# sourceMappingURL=header.css.map */

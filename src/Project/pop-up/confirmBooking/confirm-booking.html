@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Fonts Pre Connect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <!-- CSS Files Links -->
+    <link rel="stylesheet" href="../pop-up/confirmBooking/confirm-booking.css">
+</head>
+
+<body>
+    <div class="modal-dialog col-10 modalConfirm" role="form">
+        <div class="modal-content p-5">
+            <div class="modal-header bg-light">
+                <h3 class="product-title m-auto">Booking Success</h3>
+            </div>
+            <div class="modal-body bg-light">
+                <div class="row">
+                    <p>Cảm ơn Mr/ Mrs đã booking, chúng tôi rất hy vọng sẽ đem đến trải nghiệm tuyệt vời nhất cho bạn. Dưới đây là mã QR của bạn, vui lòng mang theo nó khi đến nhà hàng. Chúng tôi cũng đã gửi cho bạn qua Email
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12 row">
+                        <div class="col-12 border border-1 mt-2 mb-2">
+                            <p class="w-100 h-100 p-3 confirmName" id="confirmName">Mr/ Mrs:</p>
+                        </div>
+                        <div class="col-lg-5 col-sm-12 border border-1 mt-2 mb-2">
+                            <p class="w-100 h-100 p-3" id="confirmEmail">None</p>
+                        </div>
+                        <div class="col-lg-7 col-sm-12 border border-1 mt-2 mb-2">
+                            <p class="w-100 h-100 p-3 text-break" id="confirmPhone"> None</p>
+                        </div>
+                        <div class="col-12 border border-1 ">
+                            <p class="w-100 h-100 p-3" id="confirmNote">Note:
+                                <span id="note">We have a children so we need food not spicy. Thank you!</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 border border-1  mt-2 mb-2">
+                            <p class="w-100 h-100 p-3"><span id="confirmPeople">None</span> People</p>
+
+                        </div>
+                        <div class="col-lg-4 col-sm-6 border border-1 mt-2 mb-2">
+                            <p class="w-100 h-100 p-3" id="confirmDate">None</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 border border-1 mt-2 mb-2">
+                            <p class="w-100 h-100 p-3">None</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 m-auto text-center">
+                        <input id="text" type="text" value="Code booking: ST6CX12" style="width:50%" /><br />
+                        <div id="qrcode" class="mt-4 d-flex justify-content-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center bg-light">
+                <div class="row text-center">
+                    <button class="m-auto bg-dark text-light rounded-pill p-3 mb-3" data-bs-dismiss="modal" aria-label="Close">See you in restaurant</button>
+                    <p> 657 Ngo Quyen st, Son Tra, Danan city - 0355 01 0637 - thienhoangba@gmail.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+</body>
+
+</html>

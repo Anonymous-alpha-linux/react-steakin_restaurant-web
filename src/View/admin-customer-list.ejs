@@ -1,0 +1,220 @@
+<%- include('./admin/head.ejs') %>
+ <%# This part for additional css %>
+  <link rel="stylesheet" href="/sass/admin-booking-list.css">
+  <link rel="stylesheet" href="/sass/star.css">
+  <%- include('./admin/body.ejs') %>
+   <section class="st-admin-body">
+    <%# This part for body html %>
+     <main class="booking-list" id="booking-list">
+      <section class="booking-list__restaurant--card">
+       <div class="card__title d-flex justify-content-between">
+        <div class="card__title--main col-3">
+         <h5 class="title">FAVOURITE ORDERS</h5>
+        </div>
+        <div class="card__title--nav">
+         <span class="entries-bar">
+          <label for="entries-number">Show Entries:</label>
+          <input class="rounded-pill" type="number" name="" id="entries-number" min="0" max="60" value="0">
+         </span>
+         <span class="search-bar">
+          <input type="text" class="rounded-pill" placeholder="Search">
+          <span><i class="fas fa-search"></i></span>
+         </span>
+        </div>
+       </div>
+       <div class="card__body">
+        <div class="charts">
+         This is the place of chart entries
+        </div>
+       </div>
+       </div>
+      </section>
+
+      <section class="booking-list__restaurant--card">
+       <div class="card__title d-flex justify-content-between">
+        <div class="card__title--main col-3">
+         <h5 class="title">CUSTOMER LIST</h5>
+        </div>
+       </div>
+       <div class="card__body">
+        <table class="table-borderless w-100">
+         <thead>
+          <tr>
+           <th scope="col">Order ID</th>
+           <th scope="col">Order Name</th>
+           <th scope="col">Customer</th>
+           <th scope="col">Location</th>
+           <th scope="col">Total Spent</th>
+           <th scope="col">Last Order</th>
+           <th scope="col">Action</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <th scope="row">01</th>
+           <td>French Fries</td>
+           <td>
+            <div class="customer">
+             <span class="customer-img">
+              <div class="rounded-circle img-helper">
+               <img src="/assets/imgMenu/10.jpg" alt="">
+              </div>
+             </span>
+             <span class="customer-name">Thien Hoang</span>
+            </div>
+           </td>
+           <td>32 Do The Chap Street, Son Tra</td>
+           <td>$25.000</td>
+           <td>
+            <button class="btn btn-primary">$425</button>
+           </td>
+           <td>Delivery</td>
+           <td class="text-center">...</td>
+          </tr>
+          <tr>
+           <th scope="row">02</th>
+           <td>French Fries</td>
+           <td>
+            <div class="customer">
+             <span class="customer-img">
+              <div class="rounded-circle img-helper">
+               <img src="/assets/imgMenu/10.jpg" alt="">
+              </div>
+             </span>
+             <span class="customer-name">Thien Hoang</span>
+            </div>
+           </td>
+           <td>32 Do The Chap Street, Son Tra</td>
+           <td>$25.000</td>
+           <td>
+            <button class="btn btn-primary">$425</button>
+           </td>
+           <td>Cancel</td>
+           <td class="text-center">...</td>
+          </tr>
+          <tr>
+           <th scope="row">03</th>
+           <td>French Fries</td>
+           <td>
+            <div class="customer">
+             <span class="customer-img">
+              <div class="rounded-circle img-helper">
+               <img src="/assets/imgMenu/10.jpg" alt="">
+              </div>
+             </span>
+             <span class="customer-name">Thien Hoang</span>
+            </div>
+           </td>
+           <td>32 Do The Chap Street, Son Tra</td>
+           <td>$25.000</td>
+           <td>
+            <button class="btn btn-primary">$425</button>
+           </td>
+           <td>Delivery</td>
+           <td class="text-center">...</td>
+          </tr>
+          <tr>
+           <th scope="row">04</th>
+           <td>French Fries</td>
+           <td>
+            <div class="customer">
+             <span class="customer-img">
+              <div class="rounded-circle img-helper">
+               <img src="/assets/imgMenu/10.jpg" alt="">
+              </div>
+             </span>
+             <span class="customer-name">Thien Hoang</span>
+            </div>
+           </td>
+           <td>32 Do The Chap Street, Son Tra</td>
+           <td>$25.000</td>
+           <td>
+            <button class="btn btn-primary">$425</button>
+           </td>
+           <td>Delivery</td>
+           <td class="text-center">...</td>
+          </tr>
+          <tr>
+           <th scope="row">05</th>
+           <td>French Fries</td>
+           <td>
+            <div class="customer">
+             <span class="customer-img">
+              <div class="rounded-circle img-helper">
+               <img src="/assets/imgMenu/10.jpg" alt="">
+              </div>
+             </span>
+             <span class="customer-name">Thien Hoang</span>
+            </div>
+           </td>
+           <td>32 Do The Chap Street, Son Tra</td>
+           <td>$25.000</td>
+           <td>
+            <button class="btn btn-primary">$425</button>
+           </td>
+           <td>Delivery</td>
+           <td class="text-center">...</td>
+          </tr>
+          <tr>
+           <th scope="row">06</th>
+           <td>French Fries</td>
+           <td>
+            <div class="customer">
+             <span class="customer-img">
+              <div class="rounded-circle img-helper">
+               <img src="/assets/imgMenu/10.jpg" alt="">
+              </div>
+             </span>
+             <span class="customer-name">Thien Hoang</span>
+            </div>
+           </td>
+           <td>32 Do The Chap Street, Son Tra</td>
+           <td>$25.000</td>
+           <td>
+            <button class="btn btn-primary">$425</button>
+           </td>
+           <td>Delivery</td>
+           <td class="text-center">...</td>
+          </tr>
+          <tr>
+           <th scope="row">07</th>
+           <td>French Fries</td>
+           <td>
+            <div class="customer">
+             <span class="customer-img">
+              <div class="rounded-circle img-helper">
+               <img src="/assets/imgMenu/10.jpg" alt="">
+              </div>
+             </span>
+             <span class="customer-name">Thien Hoang</span>
+            </div>
+           </td>
+           <td>32 Do The Chap Street, Son Tra</td>
+           <td>$25.000</td>
+           <td>
+            <button class="btn btn-primary">$425</button>
+           </td>
+           <td>Delivery</td>
+           <td class="text-center">...</td>
+          </tr>
+         </tbody>
+        </table>
+        <div class="pagination__wrapper d-flex justify-content-between">
+         <div class="pagination__content">
+          <span>Showing 1 to 10 of 23 entries</span>
+         </div>
+         <ul class="pagination">
+          <li class="page-item rounded-start"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item rounded-end"><a class="page-link" href="#">Next</a></li>
+         </ul>
+        </div>
+       </div>
+       </div>
+      </section>
+     </main>
+   </section>
+   <script src="/util/star.js"></script>
+   <%- include('./admin/end.ejs') %>

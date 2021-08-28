@@ -14,6 +14,7 @@ footer {
 
 a {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sticky {
@@ -21,24 +22,45 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.disappear {
+  display: none;
+}
+
 .st-admin-sidebar {
   position: relative;
-  z-index: 1000;
+  z-index: 99;
+}
+
+.st-admin-sidebar .close-ico {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  display: none;
+}
+
+.st-admin-sidebar .close-ico:hover {
+  cursor: pointer;
 }
 
 .st-admin-sidebar__wrapper {
   width: 20%;
   height: 100vh;
   position: fixed;
+  overflow-y: scroll;
   left: 0;
   top: 0;
-  -webkit-box-shadow: 1px 0px 12px black;
-          box-shadow: 1px 0px 12px black;
+  -webkit-box-shadow: 1px 0px 10px 0.2px black;
+          box-shadow: 1px 0px 10px 0.2px black;
 }
 
 .st-admin-sidebar__wrapper .logo {
-  padding-left: 25px;
-  margin-bottom: 32px;
+  padding: 16px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 200;
 }
 
 .st-admin-sidebar__wrapper .logo__wrapper {
@@ -52,6 +74,7 @@ a {
   -webkit-background-clip: text;
   width: 100%;
   height: 50px;
+  position: relative;
 }
 
 .st-admin-sidebar__wrapper .logo__wrapper img {
@@ -61,35 +84,42 @@ a {
   height: 30px;
 }
 
-.st-admin-sidebar__wrapper .menu-list .menu .menu__item {
-  padding-left: 20px;
+.st-admin-sidebar__wrapper .menu-list .menu__item {
   font-size: 1.1em;
   font-weight: 400;
 }
 
-.st-admin-sidebar__wrapper .menu-list .menu .menu__item div {
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  padding: 20px;
-}
-
-.st-admin-sidebar__wrapper .menu-list .menu .menu__item a {
-  color: #7802ff;
+.st-admin-sidebar__wrapper .menu-list .menu__item .title i {
   vertical-align: middle;
 }
 
-.st-admin-sidebar__wrapper .menu-list .menu .menu__item span {
-  font-size: 0.5em;
-  vertical-align: bottom;
-  padding-top: 6px;
+.st-admin-sidebar__wrapper .menu-list .menu__item h5 {
+  padding: 10px 20px 0;
 }
 
-.st-admin-sidebar__wrapper .menu-list .menu .menu__item.mm-active div, .st-admin-sidebar__wrapper .menu-list .menu .menu__item:hover div {
-  background-color: rgba(0, 0, 0, 0.1);
+.st-admin-sidebar__wrapper .menu-list .menu__item dl {
+  margin: 0;
 }
 
-.st-admin-sidebar__wrapper .menu-list .menu .menu__item.mm-active a, .st-admin-sidebar__wrapper .menu-list .menu .menu__item:hover a {
-  color: #750062;
+.st-admin-sidebar__wrapper .menu-list .menu__item dl dt {
+  padding: 10px 0px 10px 42px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu__item dl dt p {
+  margin: 0;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu__item dl dd {
+  padding: 5px 50px;
+  font-weight: 100;
+  background-color: #fff;
+}
+
+.st-admin-sidebar__wrapper .menu-list .menu__item span {
+  font-size: 0.8em;
+  vertical-align: middle;
 }
 
 .st-admin-header {
@@ -232,12 +262,13 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  height: 10px;
 }
 
 .st-admin-body {
   position: relative;
   left: 20%;
-  padding: 20px;
+  padding: 20px 60px;
   z-index: -1;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.1);

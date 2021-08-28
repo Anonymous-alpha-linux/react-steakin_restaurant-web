@@ -1,0 +1,21 @@
+<title>
+ <%= docTitle %>
+</title>
+</head>
+
+<body>
+ <%- include('./navigation.ejs') %>
+  <!-- pop-up booking -->
+  <div class="modal fade confirm-table" id="booking" tabindex="-1" role="dialog" aria-labelledby="modelConfirm"
+   aria-hidden="true">
+   <%- include('../booking.ejs') %>
+  </div>
+
+  <!-- pop up Confirm booking-->
+
+  <div class="modal fade confirm-table" id="modelConfirm" tabindex="-1" role="dialog" aria-labelledby="modelConfirm"
+   aria-hidden="true">
+   <%- include('../confirm-booking.ejs') %>
+  </div>
+
+  <!-- end-popup -->

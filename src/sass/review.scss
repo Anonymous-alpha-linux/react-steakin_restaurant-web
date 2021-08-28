@@ -1,0 +1,105 @@
+.About {
+    background: {
+        image: url(../asset/img/bg-img-1.jpg);
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+        attachment: fixed;
+    }
+    margin-top: -4rem;
+    z-index: 1;
+    position: relative;
+    div {
+        .breadcrumb {
+            text-transform: capitalize;
+            line-height: 1;
+            margin: 0;
+            text-align: center;
+            justify-content: center;
+            .breadcrumb-item {
+                &.active {
+                    color: #bb9356;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            .breadcrumb-item::before {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.bg-overlay {
+    &:before {
+        content: "";
+        background-color: rgba(27, 26, 26, 0.75);
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.review {
+    >div {
+        >div:nth-child(2) {
+            justify-content: space-evenly;
+            >div {
+                border: 4px solid lightgray;
+                color: black;
+                span {
+                    i {
+                        margin: 1.5rem 0;
+                        color: rgb(235, 221, 30);
+                    }
+                }
+                img {
+                    border-radius: 50%;
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+.intro {
+    >div {
+        h3 {
+            color: #bb9356;
+            font: {
+                size: 3rem;
+                family: 'Ruthie', cursive;
+            }
+        }
+        h2 {
+            font: {
+                size: 4rem;
+                family: 'Abril Fatface', cursive;
+            }
+        }
+        .shape {
+            background-image: url(../asset/img/shape-4.png);
+            width: 100%;
+            height: 2rem;
+            padding: 1.5rem 0;
+            background: {
+                image: url(../asset/img/shape-4.png);
+                repeat: no-repeat;
+                position: center;
+            }
+        }
+        p {
+            padding-top: 5px;
+            font: {
+                size: 1rem;
+                family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}

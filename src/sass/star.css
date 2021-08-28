@@ -1,0 +1,32 @@
+.star-rating, .back-stars, .front-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.star-rating {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em !important;
+}
+
+.back-stars {
+  position: relative;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.front-stars {
+  color: #ffbc0b;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.percent {
+  color: #bb5252;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=star.css.map */

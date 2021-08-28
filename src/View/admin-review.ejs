@@ -1,0 +1,374 @@
+<%- include('./admin/head.ejs') %>
+ <%# This part for additional css %>
+  <link rel="stylesheet" href="/sass/admin-review.css">
+  <link rel="stylesheet" href="/sass/star.css">
+  <%- include('./admin/body.ejs') %>
+   <section class="st-admin-body">
+    <%# This part for body html %>
+     <main class="review" id="review">
+      <section class="review__restaurant--card">
+       <div class="card__title d-flex justify-content-between">
+        <div class="card__title--main">
+         <h2 class="title">Customer Review</h2>
+         <p>This is a big deal of customer</p>
+        </div>
+        <div class="card__title--nav">
+         <div class="btn-group">
+          <button class="rounded-pill btn btn-success">
+           <span class="rounded-circle"><i class="fas fa-check"></i></span>
+           Publish
+          </button>
+          <button class="rounded-pill btn btn-danger">
+           <span class="rounded-circle"><i class="fas fa-times"></i></span>
+           Delete
+          </button>
+         </div>
+
+
+         <span class="search-bar">
+          <input type="text" class="rounded-pill" placeholder="Search here">
+          <span><i class="fas fa-search"></i></span>
+         </span>
+
+         <span class="select-bar">
+          <select name="" id="" class="rounded-pill">
+           <option value="Day" selected>Day &#xf133;</option>
+          </select>
+         </span>
+
+        </div>
+       </div>
+       <div class="card__body">
+        <div class="users">
+         <div class="user row">
+          <input class="col review-checkbox" type="checkbox" name="" id="">
+          <div class="desc d-flex col flex-grow-1 col-2">
+           <div class="img__wrapper rounded-circle">
+            <img src="/assets/user/user_2.png" alt="" srcset="">
+           </div>
+           <div class="img__msg">
+            <p class="review-index">#C01234</p>
+            <h3 class="review-user">John Wiltahn</h3>
+
+            <div class="review-date">
+             <p>26/04/2021, 12:42 AM</p>
+            </div>
+           </div>
+          </div>
+          <div class="review-content col-6">
+           <p>We recently had a dinner with frineds at Steak-in CC and we all walked away with a great experience. Good
+            food, pleasant environment, personal attention through all the evening. Thanks to the team and we will be
+            back
+           </p>
+          </div>
+
+          <div class="review-rating col-2">
+           <h1 class="star-number">4.5</h1>
+           <span class="rating">
+            <div class="star-rate">
+             <div class="star-rating" title="70%">
+              <div class="back-stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+
+               <div class="front-stars" style="width: 72%">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+               </div>
+              </div>
+             </div>
+
+            </div>
+           </span>
+          </div>
+
+          <div class="review-control col-1">
+           <button class="btn btn-link accept"><i class="far fa-check-circle"></i></button>
+           <button class="btn btn-link deny"><i class="far fa-times-circle"></i></button>
+          </div>
+         </div>
+
+         <div class="user row">
+          <input class="col review-checkbox" type="checkbox" name="" id="">
+          <div class="desc d-flex col flex-grow-1 col-2">
+           <div class="img__wrapper rounded-circle">
+            <img src="/assets/user/user_1.png" alt="" srcset="">
+           </div>
+           <div class="img__msg">
+            <p class="review-index">#C01234</p>
+            <h3 class="review-user">John Wiltahn</h3>
+
+            <div class="review-date">
+             <p>26/04/2021, 12:42 AM</p>
+            </div>
+           </div>
+          </div>
+          <div class="review-content col-6">
+           <p>We recently had a dinner with frineds at Steak-in CC and we all walked away with a great experience. Good
+            food, pleasant environment, personal attention through all the evening. Thanks to the team and we will be
+            back
+           </p>
+          </div>
+
+          <div class="review-rating col-2">
+           <h1 class="star-number">4.5</h1>
+           <span class="rating">
+            <div class="star-rate">
+             <div class="star-rating" title="70%">
+              <div class="back-stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+
+               <div class="front-stars" style="width: 72%">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+               </div>
+              </div>
+             </div>
+
+            </div>
+           </span>
+          </div>
+
+          <div class="review-control col-1">
+           <button class="btn btn-link accept"><i class="far fa-check-circle"></i></button>
+           <button class="btn btn-link deny"><i class="far fa-times-circle"></i></button>
+          </div>
+         </div>
+
+         <div class="user row">
+          <input class="col review-checkbox" type="checkbox" name="" id="">
+          <div class="desc d-flex col flex-grow-1 col-2">
+           <div class="img__wrapper rounded-circle">
+            <img src="/assets/user/user_3.png" alt="" srcset="">
+           </div>
+           <div class="img__msg">
+            <p class="review-index">#C01234</p>
+            <h3 class="review-user">John Wiltahn</h3>
+
+            <div class="review-date">
+             <p>26/04/2021, 12:42 AM</p>
+            </div>
+           </div>
+          </div>
+          <div class="review-content col-6">
+           <p>We recently had a dinner with frineds at Steak-in CC and we all walked away with a great experience. Good
+            food, pleasant environment, personal attention through all the evening. Thanks to the team and we will be
+            back
+           </p>
+          </div>
+
+          <div class="review-rating col-2">
+           <h1 class="star-number">4.5</h1>
+           <span class="rating">
+            <div class="star-rate">
+             <div class="star-rating" title="70%">
+              <div class="back-stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+
+               <div class="front-stars" style="width: 72%">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+               </div>
+              </div>
+             </div>
+
+            </div>
+           </span>
+          </div>
+
+          <div class="review-control col-1">
+           <button class="btn btn-link accept"><i class="far fa-check-circle"></i></button>
+           <button class="btn btn-link deny"><i class="far fa-times-circle"></i></button>
+          </div>
+         </div>
+
+         <div class="user row">
+          <input class="col review-checkbox" type="checkbox" name="" id="">
+          <div class="desc d-flex col flex-grow-1 col-2">
+           <div class="img__wrapper rounded-circle">
+            <img src="/assets/user/user_2.png" alt="" srcset="">
+           </div>
+           <div class="img__msg">
+            <p class="review-index">#C01234</p>
+            <h3 class="review-user">John Wiltahn</h3>
+
+            <div class="review-date">
+             <p>26/04/2021, 12:42 AM</p>
+            </div>
+           </div>
+          </div>
+          <div class="review-content col-6">
+           <p>We recently had a dinner with frineds at Steak-in CC and we all walked away with a great experience. Good
+            food, pleasant environment, personal attention through all the evening. Thanks to the team and we will be
+            back
+           </p>
+          </div>
+
+          <div class="review-rating col-2">
+           <h1 class="star-number">4.5</h1>
+           <span class="rating">
+            <div class="star-rate">
+             <div class="star-rating" title="70%">
+              <div class="back-stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+
+               <div class="front-stars" style="width: 72%">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+               </div>
+              </div>
+             </div>
+
+            </div>
+           </span>
+          </div>
+
+          <div class="review-control col-1">
+           <button class="btn btn-link accept"><i class="far fa-check-circle"></i></button>
+           <button class="btn btn-link deny"><i class="far fa-times-circle"></i></button>
+          </div>
+         </div>
+
+         <div class="user row">
+          <input class="col review-checkbox" type="checkbox" name="" id="">
+          <div class="desc d-flex col flex-grow-1 col-2">
+           <div class="img__wrapper rounded-circle">
+            <img src="/assets/user/user_1.png" alt="" srcset="">
+           </div>
+           <div class="img__msg">
+            <p class="review-index">#C01234</p>
+            <h3 class="review-user">John Wiltahn</h3>
+
+            <div class="review-date">
+             <p>26/04/2021, 12:42 AM</p>
+            </div>
+           </div>
+          </div>
+          <div class="review-content col-6">
+           <p>We recently had a dinner with frineds at Steak-in CC and we all walked away with a great experience. Good
+            food, pleasant environment, personal attention through all the evening. Thanks to the team and we will be
+            back
+           </p>
+          </div>
+
+          <div class="review-rating col-2">
+           <h1 class="star-number">4.5</h1>
+           <span class="rating">
+            <div class="star-rate">
+             <div class="star-rating" title="70%">
+              <div class="back-stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+
+               <div class="front-stars" style="width: 72%">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+               </div>
+              </div>
+             </div>
+
+            </div>
+           </span>
+          </div>
+
+          <div class="review-control col-1">
+           <button class="btn btn-link accept"><i class="far fa-check-circle"></i></button>
+           <button class="btn btn-link deny"><i class="far fa-times-circle"></i></button>
+          </div>
+         </div>
+
+         <div class="user row">
+          <input class="col review-checkbox" type="checkbox" name="" id="">
+          <div class="desc d-flex col flex-grow-1 col-2">
+           <div class="img__wrapper rounded-circle">
+            <img src="/assets/user/user_3.png" alt="" srcset="">
+           </div>
+           <div class="img__msg">
+            <p class="review-index">#C01234</p>
+            <h3 class="review-user">John Wiltahn</h3>
+
+            <div class="review-date">
+             <p>26/04/2021, 12:42 AM</p>
+            </div>
+           </div>
+          </div>
+          <div class="review-content col-6">
+           <p>We recently had a dinner with frineds at Steak-in CC and we all walked away with a great experience. Good
+            food, pleasant environment, personal attention through all the evening. Thanks to the team and we will be
+            back
+           </p>
+          </div>
+
+          <div class="review-rating col-2">
+           <h1 class="star-number">4.5</h1>
+           <span class="rating">
+            <div class="star-rate">
+             <div class="star-rating" title="70%">
+              <div class="back-stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+
+               <div class="front-stars" style="width: 72%">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+               </div>
+              </div>
+             </div>
+
+            </div>
+           </span>
+          </div>
+
+          <div class="review-control col-1">
+           <button class="btn btn-link accept"><i class="far fa-check-circle"></i></button>
+           <button class="btn btn-link deny"><i class="far fa-times-circle"></i></button>
+          </div>
+         </div>
+
+        </div>
+       </div>
+       </div>
+      </section>
+     </main>
+   </section>
+   <script src="/util/star.js"></script>
+   <%- include('./admin/end.ejs') %>

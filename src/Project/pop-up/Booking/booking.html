@@ -1,0 +1,99 @@
+<div class="modal-dialog col-10 modalConfirm" role="form">
+    <div class="modal-content p-5">
+        <div class="modal-header bg-light">
+            <h3 class="product-title m-auto">Booking</h3>
+        </div>
+        <div class="modal-body bg-light">
+            <div class="container">
+                <form>
+
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" id="formNameLite" class="form-control" placeholder="Name..." required/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="formEmailLite" class="form-control" placeholder="Email" required/>
+                    </div>
+
+                    <!-- Number input -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="number" id="formPhoneLite" class="form-control" placeholder="Phone Number" required/>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline row mt-2">
+                                <div class="form-check col-4">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Male
+                                      </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                </div>
+                                <div class="form-check col-4">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Female
+                                      </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                </div>
+                                <div class="form-check col-4
+                                ">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                       Other
+                                      </label>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="formNoteLite" rows="4" placeholder="Note..."></textarea>
+                    </div>
+
+
+
+                    <!-- Grid-3 -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-label" for="formPeople">Number People</label>
+                            <input type="number" id="formPeopleLite" class="form-control" required/>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="formDate">Date</label>
+                            <input type="datetime-local" id="formDateLite" class="form-control" value="05/05/2021" />
+
+                        </div>
+                    </div>
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center m-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                        <label class="form-check-label" for="form6Example8"> Confirm booking </label>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="row mb-5">
+                        <div class="col-lg-8 m-auto">
+                            <button type="button" onclick="sendifLite()" class="btn btn-primary w-100 bg-dark text-light rounded-pill" data-bs-toggle="modal" data-bs-target="#modelConfirm" data-bs-dismiss="modal" aria-label="Close">Booking</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-center bg-light">
+            <div class="row text-center">
+                <button class="m-auto bg-dark text-light rounded-pill p-3 mb-3" data-bs-dismiss="modal" aria-label="Close">See you in restaurant</button>
+                <p> 657 Ngo Quyen st, Son Tra, Danan city - 0355 01 0637 - thienhoangba@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <button type="button" class="btn btn-primary btn-block mb-4 mt-4 m-auto w-75 rounded-3">Booking</button>
+
+</div>

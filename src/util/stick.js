@@ -1,4 +1,13 @@
-window.addEventListener('scroll', () => {
- const header = document.querySelector('.st-admin-header__wrapper');
- header.classList.toggle('sticky', window.scrollY > 0);
+$(function () {
+ $("#booking").load("/View/booking.ejs");
 });
+$(document).scroll(function () {
+ if ($(window).scrollTop() > 400) {
+  $(".navigation").css("background", "rgba(0, 0, 0, 0.5)");
+
+ } else if ($(window).scrollTop() < 400) {
+
+  $(".navigation").css("background", "rgba(0, 0, 0, 0.3)");
+ }
+});
+

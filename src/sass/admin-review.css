@@ -1,0 +1,109 @@
+.review .review__restaurant--card .card__title--nav {
+  padding: 10px;
+}
+
+.review .review__restaurant--card .card__title--nav button {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.review .review__restaurant--card .card__title--nav input {
+  padding: 5px;
+  vertical-align: middle;
+  outline: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.review .review__restaurant--card .card__title--nav input[type="number"] {
+  width: 50px;
+}
+
+.review .review__restaurant--card .card__title--nav .search-bar {
+  position: relative;
+}
+
+.review .review__restaurant--card .card__title--nav .search-bar > span {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.review .review__restaurant--card .card__title--nav .select-bar {
+  position: relative;
+}
+
+.review .review__restaurant--card .card__title--nav .select-bar select {
+  padding: 5px;
+  vertical-align: middle;
+  outline: none;
+  width: 100px;
+  font-weight: 600;
+}
+
+.review .review__restaurant--card .card__title--nav .select-bar select option {
+  text-align: center;
+}
+
+.review .review__restaurant--card .card__body .users .user {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  background: #fff;
+}
+
+.review .review__restaurant--card .card__body .users .user .desc {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .review__restaurant--card .card__body .users .user .desc .img__wrapper {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.review .review__restaurant--card .card__body .users .user .desc .img__wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.review .review__restaurant--card .card__body .users .user .desc .img__msg .review-index {
+  margin: 0;
+}
+
+.review .review__restaurant--card .card__body .users .review-content p {
+  text-align: justify;
+}
+
+.review .review__restaurant--card .card__body .users .review-rating h1 {
+  text-align: center;
+}
+
+.review .review__restaurant--card .card__body .users .review-rating .rating .star-rating {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.review .review__restaurant--card .card__body .users .review-control button {
+  font-size: 2em;
+}
+
+.review .review__restaurant--card .card__body .users .review-control .accept {
+  color: chartreuse;
+}
+
+.review .review__restaurant--card .card__body .users .review-control .deny {
+  color: crimson;
+}
+/*# sourceMappingURL=admin-review.css.map */

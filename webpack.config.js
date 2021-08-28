@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
- entry: './src/Controller/index.js',
+ entry: './src/Controller/indexCtrl.js',
  output: {
   filename: 'bundle.js',
   path: path.join(__dirname, '/dist'),
@@ -54,7 +54,7 @@ module.exports = {
      "sass-loader"
     ],
    }
-  ] 
+  ]
  },
  plugins: [
   new MiniCssExtractPlugin({

@@ -1,0 +1,231 @@
+.About {
+  background-image: url("../assets/bg-img-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -4rem;
+  z-index: 1;
+  position: relative;
+}
+
+.About div > h3 {
+  margin-top: 12rem;
+  color: #bb9356;
+  font-size: 3rem;
+  font-family: "Ruthie", cursive;
+}
+
+.About div h2 {
+  font-size: 4rem;
+  font-family: "Abril Fatface", cursive;
+}
+
+.About div .breadcrumb {
+  text-transform: capitalize;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.About div .breadcrumb .breadcrumb-item.active {
+  color: #bb9356;
+}
+
+.About div .breadcrumb a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.About div .breadcrumb .breadcrumb-item::before {
+  color: #fff;
+}
+
+.bg-overlay:before {
+  content: "";
+  background-color: rgba(27, 26, 26, 0.75);
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.Intro > div h3 {
+  color: #bb9356;
+  font-size: 3rem;
+  font-family: "Ruthie", cursive;
+}
+
+.Intro > div h2 {
+  font-size: 4rem;
+  font-family: "Abril Fatface", cursive;
+  margin-bottom: 2rem;
+}
+
+.Intro > div .shape {
+  background-image: url(../asset/img/shape-4.png);
+  width: 100%;
+  height: 2rem;
+  padding: 1.5rem 0;
+  background-image: url(../asset/img/shape-4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Intro > div p {
+  padding-top: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-family: Ruthie;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 56px;
+  color: #bb9356;
+}
+
+h1 {
+  text-align: center;
+}
+
+.classifieds-container > span {
+  display: block;
+  font-size: 20px;
+  color: #212121;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 10px auto 10px 0px;
+}
+
+.classifieds-container > .classifieds-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+@media screen and (min-width: 786px) {
+  .modal-dialog {
+    max-width: 70% !important;
+    max-width: 1200px !important;
+  }
+}
+
+.classifieds-preview {
+  border: 1px dashed gray;
+}
+
+.classifieds-preview > .classifieds-preview-information {
+  padding: 20px;
+}
+
+.classifieds-preview > .classifieds-preview-information > span {
+  display: block;
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-bottom: 04px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-image {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-image:hover > .dish-overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-image > .dish-overlay {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  background-color: rgba(27, 26, 26, 0.75);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-image > .dish-overlay > a {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-title:hover {
+  text-decoration: underline;
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #6e6e6e;
+  line-height: 1.2;
+  padding-bottom: 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.classifieds-preview > .classifieds-preview-information > .classifieds-preview-price {
+  text-align: right;
+  font-size: 20px;
+  line-height: 1;
+  color: #bb9356 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.product-description {
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.modal-content {
+  position: absolute;
+  color: #000;
+  text-align: left;
+  border-radius: 450%;
+  line-height: 25px;
+  margin: 100px auto 20px;
+}
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=StyleGallary.css.map */

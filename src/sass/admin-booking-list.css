@@ -1,0 +1,126 @@
+.booking-list__restaurant--card .card__title--main {
+  position: relative;
+}
+
+.booking-list__restaurant--card .card__title--main h5 {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.booking-list__restaurant--card .card__title--nav {
+  padding: 10px;
+}
+
+.booking-list__restaurant--card .card__title--nav button {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.booking-list__restaurant--card .card__title--nav input {
+  padding: 5px;
+  vertical-align: middle;
+  outline: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.booking-list__restaurant--card .card__title--nav input[type="number"] {
+  width: 50px;
+}
+
+.booking-list__restaurant--card .card__title--nav .search-bar {
+  position: relative;
+}
+
+.booking-list__restaurant--card .card__title--nav .search-bar > span {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.booking-list__restaurant--card .card__title--nav .select-bar {
+  position: relative;
+}
+
+.booking-list__restaurant--card .card__title--nav .select-bar select {
+  padding: 5px;
+  vertical-align: middle;
+  outline: none;
+  width: 100px;
+  font-weight: 600;
+}
+
+.booking-list__restaurant--card .card__title--nav .select-bar select option {
+  text-align: center;
+}
+
+.booking-list__restaurant--card .card__body .charts {
+  background: #fff;
+}
+
+.booking-list__restaurant--card .card__body table {
+  background-color: #fff;
+  font-size: 1em;
+}
+
+.booking-list__restaurant--card .card__body table th {
+  font-weight: 900;
+  opacity: 0.8;
+  text-align: left;
+  padding: 1em;
+}
+
+.booking-list__restaurant--card .card__body table td {
+  font-weight: 600;
+  padding: 1em;
+}
+
+.booking-list__restaurant--card .card__body table td span {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.booking-list__restaurant--card .card__body table td .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-list__restaurant--card .card__body table td .customer .customer-img .img-helper {
+  overflow: hidden;
+  min-width: 2em;
+  min-height: 2em;
+  width: 40px;
+  aspect-ratio: 1 / 1;
+}
+
+.booking-list__restaurant--card .card__body .pagination__wrapper {
+  padding-top: 20px;
+}
+
+.booking-list__restaurant--card .card__body .pagination__wrapper .pagination__content span {
+  vertical-align: middle;
+}
+
+.booking-list__restaurant--card .card__body .pagination__wrapper .pagination .page-item .page-link {
+  color: black;
+  outline: none;
+  border: none;
+}
+
+.booking-list__restaurant--card .card__body .pagination__wrapper .pagination .page-item.active .page-link {
+  background: pink;
+  color: white;
+}
+/*# sourceMappingURL=admin-booking-list.css.map */

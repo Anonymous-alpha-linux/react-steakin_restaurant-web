@@ -1,0 +1,149 @@
+.analysis__restaurant--card {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.analysis__restaurant--card select {
+  outline: none;
+  border: none;
+  vertical-align: super;
+}
+
+.analysis__restaurant--card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.analysis__restaurant--card .card__title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.analysis__restaurant--card .card__title--main {
+  font-weight: 600;
+}
+
+.analysis__restaurant--card .card__title--nav ul {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+}
+
+.analysis__restaurant--card .card__title--nav ul li {
+  height: 100%;
+}
+
+.analysis__restaurant--card .card__title--nav ul li button {
+  height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+
+.analysis__restaurant--card .card__title--nav ul li button.active {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.analysis__restaurant--card .card__body .product {
+  background: #fff;
+  padding: 20px;
+}
+
+.analysis__restaurant--card .card__body .product .item {
+  background: #fff;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__wrapper {
+  border-radius: 10px;
+  width: 110px;
+  aspect-ratio: 1 / 1;
+  background: blue;
+  position: relative;
+  overflow: hidden;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__wrapper span {
+  border: 4px solid #fff;
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: chocolate;
+  font-weight: 700;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__wrapper.img-sm {
+  width: 50px;
+  overflow: visible;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__wrapper.img-xl {
+  width: 100%;
+  height: 250px;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__msg {
+  padding: 0 0 0 10px;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__msg h5 {
+  margin: 0;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__msg .rating {
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__msg .rating .star-rate {
+  position: relative;
+  display: inline-block;
+}
+
+.analysis__restaurant--card .card__body .product .item .desc .img__msg .title,
+.analysis__restaurant--card .card__body .product .item .desc .img__msg .desc {
+  padding: 5px 0;
+}
+
+.analysis__restaurant--card .card__body .product .item .percent-static {
+  text-align: center;
+}
+
+.analysis__restaurant--card .card__body .product .item .order-amount {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.analysis__restaurant--card .card__body .product .item .order-amount .amount {
+  font-weight: 700;
+}
+
+.analysis__restaurant--card .card__body .product.user .item .desc .img__wrapper {
+  width: 80px;
+}
+
+.analysis__restaurant--card .card .fa-heart, .analysis__restaurant--card .card .fa-chart-bar {
+  color: coral;
+}
+
+.analysis__restaurant--card .price {
+  font-weight: 800;
+}
+/*# sourceMappingURL=analytic.css.map */

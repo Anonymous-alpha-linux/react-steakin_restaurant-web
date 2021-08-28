@@ -1,0 +1,108 @@
+.About {
+    background: {
+        image: url(../asset/img/bg-img-1.jpg);
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+        attachment: fixed;
+    }
+    margin-top: -4rem;
+    z-index: 1;
+    position: relative;
+    div {
+        >h3 {
+            margin-top: 12rem;
+            color: #bb9356;
+            font: {
+                size: 3rem;
+                family: 'Ruthie', cursive;
+            }
+        }
+        h2 {
+            font: {
+                size: 4rem;
+                family: 'Abril Fatface', cursive;
+            }
+        }
+        .breadcrumb {
+            text-transform: capitalize;
+            line-height: 1;
+            margin: 0;
+            text-align: center;
+            justify-content: center;
+            .breadcrumb-item {
+                &.active {
+                    color: #bb9356;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            .breadcrumb-item::before {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.bg-overlay {
+    &:before {
+        content: "";
+        background-color: rgba(27, 26, 26, 0.75);
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.check-out {
+    .checkout-text {
+        @media screen and (min-width: 786px) {
+            margin-top: 6%;
+        }
+    }
+}
+
+.pick-table {
+    margin-top: 15vh;
+    >div {
+        @media screen and (min-width: 786px) {
+            max-width: 70%;
+            max-width: 1200px;
+        }
+        button {
+            background-color: unset;
+            border: unset;
+        }
+        button:hover {
+            background-color: lightgray;
+        }
+        .table-2 {
+            height: 6rem;
+            background: {
+                image: url(../asset/img/table-2.png);
+                repeat: no-repeat;
+                position: center;
+            }
+        }
+        >div {
+            border: 8px solid white;
+            background-color: gray;
+        }
+    }
+}
+
+.card-total {
+    border-color: #DEE2E6 !important;
+}
+
+.relateFood {
+    margin-top: 10vh !important;
+}
+
+// pop-up

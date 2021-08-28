@@ -1,10 +1,210 @@
 <%- include('./admin/head.ejs') %>
   <%# This part for additional css %>
-
-
+    <link rel="stylesheet" href="/sass/admin.css">
     <%- include('./admin/body.ejs') %>
       <section class="st-admin-body">
         <%# This part for body html %>
-          <h1>This is a dashboard</h1>
+          <main class="dashboard" id="dashboard">
+            <section class="dashboard__restaurant--card">
+              <div class="card__title">
+                <h2>Restaurant</h2>
+              </div>
+              <div class="row row-cols-3 g-5 card__body restaurant__slider">
+                <div class="col slider__item">
+                  <div class="slider__item--card d-flex">
+                    <div class="item__msg col">
+                      <h4>2,002,150</h4>
+                      <p>Total Orders</p>
+                    </div>
+                    <div class="item__img col-4">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col slider__item">
+                  <div class="slider__item--card d-flex">
+                    <div class="item__msg col">
+                      <h4>2,002,150</h4>
+                      <p>Total Orders</p>
+                    </div>
+                    <div class="item__img col-4">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col slider__item">
+                  <div class="slider__item--card d-flex">
+                    <div class="item__msg col">
+                      <h4>2,002,150</h4>
+                      <p>Total Orders</p>
+                    </div>
+                    <div class="item__img col-4">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="row row-cols-2 g-5">
+              <section class="dashboard__monthly-statistics col-8">
+                <div class="card__title d-flex">
+                  <h2>Orders Monthly</h2>
+                  <select class="filter" name="" id="">
+                    <option value="Last 30 Day" selected>Last 30 Days</option>
+                    <option value="Last 3 months">Last 3 months</option>
+                    <option value="Last 6 months">Last 6 months</option>
+                    <option value="Early 6 months">Early 6 months</option>
+                  </select>
+                </div>
+                <div card__chart>
+                  <img src="https://static.anychart.com/images/gallery/v8/line-charts-line-chart.png" alt="">
+                </div>
+              </section>
+
+              <section class="dashboard__monthly-statistics col-4">
+                <div class="card__title">
+                  <h2>Most Selling Items</h2>
+                </div>
+                <div class="row g-3">
+                  <div class="card__chart">
+                    <img src="https://apexcharts.com/wp-content/uploads/2018/05/simple-donut-chart.svg" alt="">
+                  </div>
+                </div>
+              </section>
+            </div>
+            <section class="dashboard__recent-statistics">
+              <div class="card__title">
+                <h2>Recent Orders List</h2>
+              </div>
+              <div class="orders-show-list">
+                <table class="table-borderless w-100">
+                  <thead>
+                    <tr>
+                      <th scope="col">#No</th>
+                      <th scope="col">Customer</th>
+                      <th scope="col">Delivery Date & Time</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">01</th>
+                      <td>
+                        <div class="customer">
+                          <span class="customer-img">
+                            <div class="rounded-circle img-helper">
+                              <img src="/assets/imgMenu/10.jpg" alt="">
+                            </div>
+                          </span>
+                          <span class="customer-name">Thien Hoang</span>
+                        </div>
+                      </td>
+                      <td>20 Aug 2021, 10:30 AM</td>
+                      <td>$25.000</td>
+                      <td>Assign</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">02</th>
+                      <td>
+                        <div class="customer">
+                          <span class="customer-img">
+                            <div class="rounded-circle img-helper">
+                              <img src="/assets/imgMenu/10.jpg" alt="">
+                            </div>
+                          </span>
+                          <span class="customer-name">Thien Hoang</span>
+                        </div>
+                      </td>
+                      <td>20 Aug 2021, 10:30 AM</td>
+                      <td>$25.000</td>
+                      <td>Done</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">03</th>
+                      <td>
+                        <div class="customer">
+                          <span class="customer-img">
+                            <div class="rounded-circle img-helper">
+                              <img src="/assets/imgMenu/10.jpg" alt="">
+                            </div>
+                          </span>
+                          <span class="customer-name">Thien Hoang</span>
+                        </div>
+                      </td>
+                      <td>20 Aug 2021, 10:30 AM</td>
+                      <td>$25.000</td>
+                      <td>Cancel</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">04</th>
+                      <td>
+                        <div class="customer">
+                          <span class="customer-img">
+                            <div class="rounded-circle img-helper">
+                              <img src="/assets/imgMenu/10.jpg" alt="">
+                            </div>
+                          </span>
+                          <span class="customer-name">Thien Hoang</span>
+                        </div>
+                      </td>
+                      <td>20 Aug 2021, 10:30 AM</td>
+                      <td>$25.000</td>
+                      <td>Cancel</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">05</th>
+                      <td>
+                        <div class="customer">
+                          <span class="customer-img">
+                            <div class="rounded-circle img-helper">
+                              <img src="/assets/imgMenu/10.jpg" alt="">
+                            </div>
+                          </span>
+                          <span class="customer-name">Thien Hoang</span>
+                        </div>
+                      </td>
+                      <td>20 Aug 2021, 10:30 AM</td>
+                      <td>$25.000</td>
+                      <td>Done</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">06</th>
+                      <td>
+                        <div class="customer">
+                          <span class="customer-img">
+                            <div class="rounded-circle img-helper">
+                              <img src="/assets/imgMenu/10.jpg" alt="">
+                            </div>
+                          </span>
+                          <span class="customer-name">Thien Hoang</span>
+                        </div>
+                      </td>
+                      <td>20 Aug 2021, 10:30 AM</td>
+                      <td>$25.000</td>
+                      <td>Done</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">07</th>
+                      <td>
+                        <div class="customer">
+                          <span class="customer-img">
+                            <div class="rounded-circle img-helper">
+                              <img src="/assets/imgMenu/10.jpg" alt="">
+                            </div>
+                          </span>
+                          <span class="customer-name">Thien Hoang</span>
+                        </div>
+                      </td>
+                      <td>20 Aug 2021, 10:30 AM</td>
+                      <td>$25.000</td>
+                      <td>Cancel</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
+
       </section>
       <%- include('./admin/end.ejs') %>

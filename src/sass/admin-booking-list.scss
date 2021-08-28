@@ -1,0 +1,128 @@
+.booking-list {
+  &__restaurant--card {
+    .card {
+      &__title {
+        &--main {
+          position: relative;
+          h5 {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px 0;
+            margin: 0;
+          }
+        }
+
+        &--nav {
+          padding: 10px;
+          button {
+            margin: 0 10px;
+            font-weight: 500;
+          }
+
+          input {
+            padding: 5px;
+            vertical-align: middle;
+            outline: none;
+            margin: 0 10px;
+            font-weight: 600;
+          }
+          input[type="number"] {
+            width: 50px;
+          }
+          .entries-bar {
+          }
+          .search-bar {
+            position: relative;
+            > span {
+              position: absolute;
+              right: 25px;
+              top: 50%;
+              transform: translateY(-50%);
+              cursor: pointer;
+            }
+          }
+
+          .select-bar {
+            position: relative;
+            select {
+              padding: 5px;
+              vertical-align: middle;
+              outline: none;
+              width: 100px;
+              font-weight: 600;
+              option {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      &__body {
+        .charts {
+          background: #fff;
+        }
+        table {
+          background-color: #fff;
+          font-size: 1em;
+
+          th {
+            font-weight: 900;
+            opacity: 0.8;
+            text-align: left;
+            padding: 1em;
+          }
+          td {
+            font-weight: 600;
+            padding: 1em;
+            span {
+              overflow: hidden;
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 5px;
+            }
+            .customer {
+              display: flex;
+              gap: 20px;
+              align-items: center;
+              .customer-img {
+                .img-helper {
+                  overflow: hidden;
+                  min-width: 2em;
+                  min-height: 2em;
+                  width: 40px;
+                  aspect-ratio: 1 / 1;
+                }
+              }
+              .customer-name {
+              }
+            }
+          }
+        }
+        .pagination__wrapper {
+          padding-top: 20px;
+          .pagination {
+            &__content {
+              span {
+                vertical-align: middle;
+              }
+            }
+            .page-item {
+              .page-link {
+                color: black;
+                outline: none;
+                border: none;
+              }
+              &.active {
+                .page-link {
+                  background: pink;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -41,6 +41,12 @@ router.post('/AddFood', (req, res, next) => {
  return res.redirect('/');
 })
 
-router.get('/product', productController.getFood)
+router.get('/product', productController.getFood);
+
+router.get('/analytics', adminController.getAnalytic);
+
+router.get('/review', adminController.getReview);
+router.get('/booking-list', adminController.getBookingList)
+router.get('/customer-list', adminController.getCustomerList);
 
 module.exports = router

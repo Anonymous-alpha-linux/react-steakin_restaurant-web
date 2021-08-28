@@ -14,8 +14,11 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 
 
 ///Local Import
+///route
 const adminRoutes = require('./src/route/admin');
 const shopRoutes = require('./src/route/shop');
+const indexRoutes = require('./src/route/index')
+///a root directory
 const rootDir = require('./src/util/path');
 
 ///Server Initialization
@@ -33,6 +36,7 @@ app.use(express.static(path.join(rootDir, '/src')))
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
+app.use(indexRoutes);
 
 app.use((req, res, next) => {
  // res.status(404).sendFile(path.join(__dirname, 'src', 'View', '404.html'))

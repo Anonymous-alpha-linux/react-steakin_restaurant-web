@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/df400f5c99.js" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("../Header/header.html");
+            $("#footer").load("../Footer/footer.html");
+            $("#modelConfirm").load("../pop-up/confirmBooking/confirm-booking.html");
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header" class="navigation"></header>
+    <!-- pop-up booking -->
+    <div class="modal fade confirm-table" id="booking" tabindex="-1" role="dialog" aria-labelledby="modelConfirm" aria-hidden="true">
+
+    </div>
+
+    <!-- pop up Confirm booking-->
+
+    <div class="modal fade confirm-table" id="modelConfirm" tabindex="-1" role="dialog" aria-labelledby="modelConfirm" aria-hidden="true">
+
+    </div>
+
+    <!-- end-popup -->
+    <div>
+        <div class="p-5 bg-dark About bg-overlay">
+            <div class="container text-center text-light">
+                <h3 class="title">Steak In!</h3>
+                <h2 class="title">Booking</h2>
+                <ol class="breadcrumb m-auto mt-5" arial-label="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section starts  -->
+    <section id="hero">
+        <div class="container-xl">
+            <div class="row gy-4">
+                <div class="col-lg-8">
+
+                    <div class="post featured-post-lg">
+                        <div class="details clearfix">
+                            <a href="#" class="category-badge">Food</a>
+                            <h2 class="post-title">
+                                <a href="#">Bite Off More Then You Can Chew?
+                                </a>
+                            </h2>
+                            <ul class="meta list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#">Techie Coder 30 May 2021</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#">
+                            <div class="thumb rounded">
+                                <div class="inner data-bg-image" data-bg-image="images/posts/2.jpg">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post-tabs rounded bordered">
+                        <ul class="nav nav-tabs nav-pills nav-fill" id="postTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="popular" aria-selected="true" class="nav-link active" data-bs-target="#popular" data-bs-toggle="tab" id="popular-tab" role="tab" type="button">
+                                    Popular
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button aria-controls="recent" aria-selected="false" class="nav-link" data-bs-target="#recent" data-bs-toggle="tab" id="recent-tab" role="tab" type="button">
+                                    Recent
+                                </button>
+                            </li>
+
+                        </ul>
+
+                        <!-- content  -->
+                        <div class="tab-content" id="postsTabContent">
+                            <!-- loader -->
+                            <div class="lds-dual-ring"></div>
+                            <!-- pop post  -->
+
+                            <div class="tab-pane fade show active" id="popular" aria-labelledby="popular-tab" role="tabpanel">
+                                <!-- post  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/3.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">I Can't Believe I Ate The Whole Thing
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">24 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- post2  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/4.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">Bowl of Fun</a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">26 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- post3  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/5.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">Breakfast Of Champions
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">28 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- post4  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/6.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">Cooking Up A Storm
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">01 Jun 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- recent  -->
+                            <div class="tab-pane fade" id="recent" aria-labelledby="recent-tab" role="tabpanel">
+                                <!-- post  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/7.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">Corn In The USA
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">24 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- post2  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/8.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">Finger Lickin' Good
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">26 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- post3  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/9.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">Food & Friends... Life is Good
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">28 Jun 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- post4  -->
+                                <div class="post post-list-sm circle">
+                                    <div class="thumb circle">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/tabs-3.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">Should we invest in soverign gold bonds</a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">04 Jun 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- main content -->
+    <section class="main-content">
+        <div class="container-xl">
+            <div class="row gy-4">
+                <!-- left part -->
+                <div class="col-lg-12">
+                    <div class="section-header">
+                        <h3 class="section-title">The Best Side Dishes for Next Dinner</h3>
+                    </div>
+
+                    <div class="padding-30 rounded bordered">
+                        <div class="row gy-5">
+                            <div class="col-sm-6">
+                                <!-- Post -->
+                                <div class="post">
+                                    <div class="thumb rounded">
+                                        <a href="#" class="category-badge position-absolute">Food</a>
+                                        <span class="post-format">
+                                            <i class="icon-picture"></i>
+                                        </span>
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="/images/posts/1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="meta list-inline mt-4 mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <img src="/images/posts/10.jpg" alt=""> Food recipes
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">05 Jun 2021</li>
+                                    </ul>
+                                    <h5 class="post-title mb-3 mt-3">
+                                        <a href="#">Best food</a>
+                                    </h5>
+                                    <p class="excerpt mb-0">
+                                        This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quasi.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="post post-list-sm square">
+                                    <div class="thumb rounded">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/11.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">
+                                                Food Frenzy
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">25 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post post-list-sm square">
+                                    <div class="thumb rounded">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/12.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">
+                                                Loafin' Time
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">25 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post post-list-sm square">
+                                    <div class="thumb rounded">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/13.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">
+                                                Sugar Pie, Honey Bunch
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">28 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post post-list-sm square">
+                                    <div class="thumb rounded">
+                                        <a href="#">
+                                            <div class="inner">
+                                                <img src="images/posts/14.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="details clearfix">
+                                        <h6 class="post-title my-0">
+                                            <a href="#">
+                                                Sushi Savvy
+                                            </a>
+                                        </h6>
+                                        <ul class="meta list-inline mt-1 mb-0">
+                                            <li class="list-inline-item">28 May 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer"></footer>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.sticky-sidebar.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

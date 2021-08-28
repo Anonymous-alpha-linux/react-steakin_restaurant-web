@@ -1,0 +1,104 @@
+.About {
+  background-image: url(../asset/img/bg-img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -4rem;
+  z-index: 1;
+  position: relative;
+}
+
+.About div > h3 {
+  margin-top: 12rem;
+  color: #bb9356;
+  font-size: 3rem;
+  font-family: 'Ruthie', cursive;
+}
+
+.About div h2 {
+  font-size: 4rem;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.About div .breadcrumb {
+  text-transform: capitalize;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.About div .breadcrumb .breadcrumb-item.active {
+  color: #bb9356;
+}
+
+.About div .breadcrumb a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.About div .breadcrumb .breadcrumb-item::before {
+  color: #fff;
+}
+
+.bg-overlay:before {
+  content: "";
+  background-color: rgba(27, 26, 26, 0.75);
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 786px) {
+  .check-out .checkout-text {
+    margin-top: 6%;
+  }
+}
+
+.pick-table {
+  margin-top: 15vh;
+}
+
+@media screen and (min-width: 786px) {
+  .pick-table > div {
+    max-width: 70%;
+    max-width: 1200px;
+  }
+}
+
+.pick-table > div button {
+  background-color: unset;
+  border: unset;
+}
+
+.pick-table > div button:hover {
+  background-color: lightgray;
+}
+
+.pick-table > div .table-2 {
+  height: 6rem;
+  background-image: url(../asset/img/table-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pick-table > div > div {
+  border: 8px solid white;
+  background-color: gray;
+}
+
+.card-total {
+  border-color: #DEE2E6 !important;
+}
+
+.relateFood {
+  margin-top: 10vh !important;
+}
+/*# sourceMappingURL=Stylebookingdetail.css.map */

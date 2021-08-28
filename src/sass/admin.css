@@ -1,1 +1,106 @@
-/* No CSS *//*# sourceMappingURL=admin.css.map */
+.dashboard img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.dashboard .card__title {
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .card__title h2 {
+  font-size: 1.4em;
+}
+
+.dashboard .card__title .filter {
+  height: 22px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.dashboard__restaurant--card .card__body .slider__item:nth-child(1) {
+  color: blue;
+}
+
+.dashboard__restaurant--card .card__body .slider__item:nth-child(2) {
+  color: red;
+}
+
+.dashboard__restaurant--card .card__body .slider__item:nth-child(3) {
+  color: #f1a81f;
+}
+
+.dashboard__restaurant--card .card__body .slider__item--card {
+  background-color: #fff;
+  padding: 25px;
+}
+
+.dashboard__restaurant--card .card__body .slider__item--card .item__msg {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-weight: 800;
+}
+
+.dashboard__restaurant--card .card__body .slider__item--card .item__msg h4 {
+  font-weight: 200 !important;
+}
+
+.dashboard__restaurant--card .card__body .slider__item--card .item__msg p {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.dashboard__restaurant--card .card__body .slider__item--card .item__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.dashboard table {
+  background-color: #fff;
+  font-size: 1em;
+}
+
+.dashboard table th {
+  font-weight: 900;
+  opacity: 0.8;
+  text-align: left;
+  padding: 1em;
+}
+
+.dashboard table td {
+  font-weight: 600;
+  padding: 1em;
+}
+
+.dashboard table td span {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.dashboard table td .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard table td .customer .customer-img .img-helper {
+  overflow: hidden;
+  min-width: 2em;
+  min-height: 2em;
+  width: 40px;
+  aspect-ratio: 1 / 1;
+}
+/*# sourceMappingURL=admin.css.map */
