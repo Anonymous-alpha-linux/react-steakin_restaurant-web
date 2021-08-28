@@ -48,5 +48,6 @@ router.get('/analytics', adminController.getAnalytic);
 router.get('/review', adminController.getReview);
 router.get('/booking-list', adminController.getBookingList)
 router.get('/customer-list', adminController.getCustomerList);
+router.get('/management', adminController.getFoodManagement);
 
 module.exports = router

@@ -33,3 +33,10 @@ exports.getCustomerList = (req, res, next) => {
   pageName: 'Customer List',
  })
 }
+
+exports.getFoodManagement = (req, res, next) => {
+ res.render('admin-management', {
+  docTitle: 'Steak-in Restaurant | The luxury restaurant in Danang',
+  pageName: 'Food List',
+ })
+}

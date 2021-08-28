@@ -1,0 +1,83 @@
+<%- include('./admin/head.ejs') %>
+  <%# This part for additional css %>
+    <link rel="stylesheet" href="/sass/admin-booking-list.css">
+    <link rel="stylesheet" href="/sass/star.css">
+    <%- include('./admin/body.ejs') %>
+      <section class="st-admin-body">
+        <%# This part for body html %>
+          <main class="food-management" id="food-mangement">
+            <section class="food-management__restaurant--card">
+              <div class="card__title d-flex justify-content-between">
+                <div class="card__title--main col-3">
+                  <h5 class="title">FAVOURITE ORDERS</h5>
+                  <a href="#">Blick</a>
+                </div>
+                <div class="card__title--nav">
+                  <span class="entries-bar">
+                    <label for="entries-number">Show Entries:</label>
+                    <input class="rounded-pill" type="number" name="" id="entries-number" min="0" max="60" value="0">
+                  </span>
+                  <span class="search-bar">
+                    <input type="text" class="rounded-pill" placeholder="Search">
+                    <span><i class="fas fa-search"></i></span>
+                  </span>
+                </div>
+              </div>
+              <div class="card__body">
+                <div class="charts">
+                  This is the place of chart entries
+                </div>
+              </div>
+              </div>
+            </section>
+
+            <section class="booking-list__restaurant--card">
+              <div class="card__title d-flex justify-content-between">
+                <div class="card__title--main col-3">
+                  <h5 class="title">CUSTOMER LIST</h5>
+                </div>
+              </div>
+              <div class="card__body">
+                <table class="table-borderless w-100">
+                  <thead>
+                    <tr>
+                      <th scope="col">Food ID</th>
+                      <th scope="col">Food Name</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">#5552323</th>
+                      <td>French Fries</td>
+                      <td>9623</td>
+                      <td>
+                        <button class="btn btn-primary">Out of Stock</button>
+                      </td>
+                      <td>$123 </td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pagination__wrapper d-flex justify-content-between">
+                  <div class="pagination__content">
+                    <span>Showing 1 to 10 of 23 entries</span>
+                  </div>
+                  <ul class="pagination">
+                    <li class="page-item rounded-start"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item rounded-end"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+            </section>
+          </main>
+      </section>
+      <script src="/util/star.js"></script>
+      <%- include('./admin/end.ejs') %>
